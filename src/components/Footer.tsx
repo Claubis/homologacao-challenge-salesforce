@@ -26,7 +26,7 @@ export default function Footer(){
 
                 </div>
                 
-                <div className="grid text-sm gap-x-3 gap-y-8 lg:w-2/3 md:grid-cols-4">
+                <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 md:grid-cols-4">
                     <div className="space-y-3">
                     
                     <TextReader text="Produtos">

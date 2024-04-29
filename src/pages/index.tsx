@@ -1,6 +1,6 @@
 
 import HomePage from '../components/Home'
-// import DetailsCompany from '../app/components/DetailsCompany'
+import DetailsCompany from '../components/DetailsCompany'
 // import About from '../app/components/About'
 // import AboutService from '../app/components/AboutService'
 // import AboutSalesForce from '@/app/components/AboutSalesForce'
@@ -15,8 +15,8 @@ export default function Home() {
       
       {/* <ModalLogin/> */}
       <HomePage />
-      {/* <DetailsCompany/>
-      <About />
+      <DetailsCompany/>
+      {/*<About />
       <AboutService />
       <AboutSalesForce/>
       <AboutForms/>

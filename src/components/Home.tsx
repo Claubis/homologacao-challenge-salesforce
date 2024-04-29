@@ -10,7 +10,7 @@ export default function Home(){
 
         <section className="dark:bg-gray-700 dark:text-white">
             
-            <div className="grid md:flex md:justify-center md:items-center min-h-[70vh] p-10">
+            <div className="grid md:flex md:justify-center md:items-center min-h-[70vh] p-6 md:p-10">
                 
                 <div className="flex flex-col gap-10 justify-start items-start">
 
@@ -32,7 +32,7 @@ export default function Home(){
 
                     </div>
 
-                    <div className="self-start px-8 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl">
+                    <div className="self-center md:self-start px-8 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl">
                         
                         <TextReader text="Entre em contato">
                         

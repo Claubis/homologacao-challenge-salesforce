@@ -7,8 +7,8 @@ npm install @headlessui/react @heroicons/react
 
 import { Fragment, useState, useEffect } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import { GlobeAltIcon, MoonIcon, Cog6ToothIcon, MegaphoneIcon } from '@heroicons/react/24/outline'
+import { ChevronDownIcon, PhoneIcon, PlayCircleIcon, ArrowUpIcon, ArrowDownIcon, FolderMinusIcon, ArrowRightStartOnRectangleIcon  } from '@heroicons/react/20/solid'
+import { GlobeAltIcon, MoonIcon, Cog6ToothIcon, MegaphoneIcon  } from '@heroicons/react/24/outline'
 
 /* Importações geais */
 import Link from 'next/link';
@@ -35,12 +35,14 @@ export default function NavSolution() {
   const { isTextReaderOn, toggleTextReaderOn } = useTextReader();
  
   const solutions = [
+    { name: 'Documentação', description: 'Conheça o que foi criado e como utilizar cada recurso para acessibilidade', href: '/Documentation', icon: FolderMinusIcon},
+    { name: 'Navegação com TAB', description: 'Navegue pelos nossos conteúdos utilizando a tecla TAB. Cada sessão e conteúdo que você acessar ficará em foco e destacado, facilitando a seleção e ação que você deseja realizar.', href: '/Documentation', icon: ArrowRightStartOnRectangleIcon},
     { name: 'Tema', description: 'Defina entre claro ou escuro', href: '#', icon: MoonIcon, action: 'toggleDarkMode' },
     { name: 'Leitor de tela', description: 'Leitura parcial ou total dos textos disponíveis na nossa página', href: '#', icon: MegaphoneIcon, action: 'useTextReader'  },
-    { name: 'Configuração', description: "Ajuste tamanho da fonte ou cor, o que for melhor para sua visão", href: '#', icon: Cog6ToothIcon },
+    { name: 'Configuração', description: "Ajuste a cor das fontes", href: '#', icon: Cog6ToothIcon },
     { name: 'Idioma', description: 'Defina o idioma da sua página', href: '/ModalIdioma', icon: GlobeAltIcon, action:'ChangeLanguage' },
-    { name: 'Aumentar fonte', description: 'Defina o tamanho da fonte usando a seta para cima para aumentar a fonte', href: '#', icon: Cog6ToothIcon, action: 'useToggleFontIncrease' },
-    { name: 'Diminuir fonte', description: 'Defina o tamanho da fonte usando seta para baixo para diminuir a fonte', href: '#', icon: Cog6ToothIcon, action: 'useToggleFontDecrease' },
+    { name: 'Aumentar fonte', description: 'Defina o tamanho da fonte usando a seta para cima para aumentar a fonte', href: '#', icon: ArrowUpIcon, action: 'useToggleFontIncrease' },
+    { name: 'Diminuir fonte', description: 'Defina o tamanho da fonte usando seta para baixo para diminuir a fonte', href: '#', icon: ArrowDownIcon, action: 'useToggleFontDecrease' },
   ]
 
   const callsToAction = [
