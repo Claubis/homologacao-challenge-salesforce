@@ -39,7 +39,7 @@ export default function Documentation(){
                              
                             </li>
 
-                            <li className="space-y-1">
+                            <li className="space-y-1 flex flex-col gap-5">
                                 
                                 <div className="flex items-center space-x-2">
                                     
@@ -52,33 +52,46 @@ export default function Documentation(){
 
                                 </div>
 
-                                <p>Etapa 1</p>
+                                <p className="pt-5"><strong>Etapa 1</strong></p>
 
-                                <div className='border dark:border-0'>
+                                <p className="font-sen text-xl">Explore nossa página inicial: com um menu simples, garantimos que tudo seja fácil e agradável para uma experiência ainda mais tranquila.</p>
+
+                                <div className='border border-[#3EA0E7] rounded dark:border-0'>
                                     <img src="/assets/Documentation/imagem1.png" alt="Imagem que mostra o processo para acessar a documentação de acessibilidade" />
                                 </div>
 
-                                <p>Etapa 2</p>
+                                <p className="pt-5"><strong>Etapa 2</strong></p>
 
-                                <div className='border dark:border-0'>
+                                <p className="font-sen text-xl">Para começar, selecione 'Acessibilidade' no menu.</p>
+
+                                <div className='border border-[#3EA0E7] rounded dark:border-0'>
                                     <img src="/assets/Documentation/imagem2.png" alt="Imagem que mostra o processo para acessar a documentação de acessibilidade" />
                                 </div>
 
-                                <p>Etapa 3</p>
+                                <p className="pt-5"><strong>Etapa 3</strong></p>
 
-                                <div className='border dark:border-0'>
+                                <p className="font-sen text-xl">Em seguida, clique em 'Documentação' para entender o que foi criado e como utilizar cada recurso.</p>
+
+                                <div className='border border-[#3EA0E7] rounded dark:border-0'>
                                     <img src="/assets/Documentation/imagem3.png" alt="Imagem que mostra o processo para acessar a documentação de acessibilidade" />
                                 </div>
 
-                                <p>Etapa 4</p>
+                                <p className="pt-5"><strong>Etapa 4</strong></p>
 
-                                <div className='border dark:border-0'>
+                                <p className="font-sen text-xl">O diferente desse passo a passo é que ele já é integrado com a leitura de tela, então se o usuário tiver  deficiência parcial ou
+                                Total da visão, ele consegue saber por onde esta navegando e quais opções clicar.</p>
+
+                                <div className='border border-[#3EA0E7] rounded dark:border-0'>
                                     <img src="/assets/Documentation/imagem4.png" alt="Imagem que mostra o processo para acessar a documentação de acessibilidade" />
                                 </div>
 
-                                <p>Etapa 5</p>
+                                <p className="pt-5"><strong>Etapa 5</strong></p>
 
-                                <div className='border dark:border-0'>
+                                <p className="font-sen text-xl">Explore nossa documentação completa! 
+                                    Nossa documentação é projetada para atender a todos os públicos, oferecendo três modelos de explicação: texto, fotos e vídeos. Se você prefere aprender lendo, temos explicações detalhadas em texto. Se prefere uma abordagem visual, oferecemos fotos passo a passo. E se prefere aprender assistindo, temos vídeos explicativos. Com esses três modelos, garantimos que você aprenda de forma simples e prática, independentemente do seu estilo de aprendizado.
+                                    </p>
+
+                                <div className='border border-[#3EA0E7] rounded dark:border-0'>
                                     <img src="/assets/Documentation/imagem5.png" alt="Imagem que mostra o processo para acessar a documentação de acessibilidade" />
                                 </div>
 
