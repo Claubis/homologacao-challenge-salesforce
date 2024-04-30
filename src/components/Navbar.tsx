@@ -72,13 +72,13 @@ export default function Navbar(){
                     
                 <TextReader text="Sign in">
 
-                    <Link href="/Login"><button className="self-center px-8 py-3 rounded font-manrope">Sign in</button></Link>
+                    <Link href="/Login"><button className="self-center px-8 py-3 rounded font-sen hover:text-[#3EA0E7]">Sign in</button></Link>
                     
                 </TextReader>
                     
                 <TextReader text="Cadastre-se">
 
-                    <Link href="/Cadastro"><button className="self-center px-8 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl">Cadastre-se</button></Link>
+                    <Link href="/Cadastro"><button className="self-center px-8 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl hover:bg-primeira">Cadastre-se</button></Link>
                     
                 </TextReader>
 

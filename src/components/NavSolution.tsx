@@ -104,7 +104,7 @@ export default function NavSolution() {
       <Popover.Button className="inline-flex items-center gap-x-1 font-sen leading-6 text-gray-900">
         
         <TextReader text="Acessibilidade">
-            <span className='dark:text-[#FFFF] dark:border-[#FFFF]'>Acessibilidade</span>
+            <span className='dark:text-[#FFFF] dark:border-[#FFFF] font-manrope'>Acessibilidade</span>
         </TextReader>
 
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />

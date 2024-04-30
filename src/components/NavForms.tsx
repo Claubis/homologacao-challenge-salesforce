@@ -1,17 +1,20 @@
 "use client"
 
+/* Importações gerais */
 import React from "react";
-
+import Link from 'next/link'
 
 /* Instalar
 npm install @headlessui/react @heroicons/react
 */
 
+/* Importação dos icones */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { ChartPieIcon, CursorArrowRaysIcon, HeartIcon} from '@heroicons/react/24/outline'
-import Link from 'next/link'
+
+/* Importação de componentes */
 import TextReader from "./TextReader";
 
 const solutions = [
@@ -28,9 +31,9 @@ const callsToAction = [
 export default function NavForms() {
   return (
     <Popover className="relative">
-      <Popover.Button className="inline-flex items-center gap-x-1 font-sen leading-6 text-gray-900">
+      <Popover.Button className="inline-flex items-center gap-x-1 font-manrope leading-6  text-gray-900">
         <TextReader text="Formulários">
-          <span className='dark:text-[#FFFF] dark:border-[#FFFF]'>Formulários</span>
+          <span className='dark:text-[#FFFF] dark:border-[#FFFF] font-manrope'>Formulários</span>
         </TextReader>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
@@ -45,19 +48,26 @@ export default function NavForms() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white dark:bg-gray-700 font-sen leading-6 shadow-lg ring-1 ring-gray-900/5">
-            <div className="p-4">
+          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white dark:bg-gray-700 font-sen leading-6 shadow-lg ring-1 ring-gray-900/5 ">
+            <div className="p-4 ">
               {solutions.map((item) => (
-                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 dark:hover:bg-gray-600 hover:bg-segunda">
+
                   <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-[#3EA0E7]" aria-hidden="true" />
+                    <item.icon className="h-6 w-6 text-gray-600 group-hover:text-[#3EA0E7] " aria-hidden="true" />
                   </div>
 
                   <div>
-                    <Link href={item.href} className="font-sen text-gray-900 dark:text-white">
-                      {item.name}
-                      <span className="absolute inset-0" />
+
+                    <Link href={item.href} className="font-manrope text-gray-900 dark:text-white">
+                    
+                    <TextReader text={item.name}>
+                        {item.name}
+                        <span className="absolute inset-0" />
+                    </TextReader>
+
                     </Link>
+
                     <p className="mt-1 text-gray-600 dark:text-white">{item.description}</p>
                   </div>
 
@@ -68,15 +78,28 @@ export default function NavForms() {
             <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
               {callsToAction.map((item) => (
 
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100"
-                >
-                  <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                  {item.name}
-                </Link>
+
+              
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="flex items-center justify-center gap-x-2.5 p-3 font-manrope text-gray-900 hover:bg-gray-100"
+                  >
+                    <TextReader text={item.name}>
+
+                        <Fragment>
+
+                          <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                        {item.name}
+
+                        </Fragment>
+
+                    </TextReader>
+                  </Link>
+              
               ))}
+
+              
             </div>
 
             <div className="flex justify-center h-20 text-xl">
