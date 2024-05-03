@@ -61,7 +61,7 @@ export default function AboutForms(){
                     
                     <div className="flex flex-col justify-center flex-1 p-6 ">
                         
-                        <span className="text-xs uppercase">Formulário de contato</span>
+                        <span className="text-xs uppercase">Formulário de contato.</span>
                         
                         <h3 className="text-3xl font-bold">Estamos ansiosos pelo seu contato</h3>
                         
