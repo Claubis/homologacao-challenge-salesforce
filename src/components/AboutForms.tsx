@@ -17,7 +17,7 @@ export default function AboutForms(){
 
                     <div className="flex justify-center items-center">
                     
-                        <Image src="/assets/FormDescoberta/Imagem1.png" alt="Imagem contendo um formulário" width={500} height={500} />
+                        <img src="/assets/FormDescoberta/Imagem1.png" alt="Imagem contendo um formulário" width={500} height={500} />
 
                     </div>
 
@@ -38,7 +38,7 @@ export default function AboutForms(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     
-                    <Image src="/assets/FormDescoberta/Imagem5.png" alt="Imagem com um formulário de feedback" width={500} height={500}/>
+                    <img src="/assets/FormDescoberta/Imagem5.png" alt="Imagem com um formulário de feedback" width={500} height={500}/>
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -57,7 +57,7 @@ export default function AboutForms(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
                     
-                    <Image src="/assets/FormDescoberta/Imagem2.png" alt="Imagem sobre um formulário de contato"  width={500} height={500} />
+                    <img src="/assets/FormDescoberta/Imagem2.png" alt="Imagem sobre um formulário de contato"  width={500} height={500} />
                     
                     <div className="flex flex-col justify-center flex-1 p-6 ">
                         
