@@ -8,9 +8,6 @@ import { useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 
-/* Importação de componentes */
-import { enviarDadosParaJava } from './api/api';
-
 
 export default function Contact() {
 
@@ -37,28 +34,28 @@ export default function Contact() {
     };
 
     /* Para salvar as informações em csv */
-    const saveDataToCSV = (InformacoesFormulario: any) => {
+    // const saveDataToCSV = (InformacoesFormulario: any) => {
         
-        /* Verificar as informações antes de baixar */
-        console.log(InformacoesFormulario);
+    //     /* Verificar as informações antes de baixar */
+    //     console.log(InformacoesFormulario);
     
-        const csvContent = "Nome,Sobrenome,Email,Telefone,Senha,ConfirmacaoSenha,Genero,Empresa\n" +
-            `${InformacoesFormulario.nome},${InformacoesFormulario.telefone},${InformacoesFormulario.email},${InformacoesFormulario.tamanho},${InformacoesFormulario.segmento},${InformacoesFormulario.produto},${InformacoesFormulario.cargo},${InformacoesFormulario.mensagem}\n`;
+    //     const csvContent = "Nome,Sobrenome,Email,Telefone,Senha,ConfirmacaoSenha,Genero,Empresa\n" +
+    //         `${InformacoesFormulario.nome},${InformacoesFormulario.telefone},${InformacoesFormulario.email},${InformacoesFormulario.tamanho},${InformacoesFormulario.segmento},${InformacoesFormulario.produto},${InformacoesFormulario.cargo},${InformacoesFormulario.mensagem}\n`;
         
-        const link = document.createElement('a');
-        link.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csvContent);
-        link.download = 'form_data.csv';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+    //     const link = document.createElement('a');
+    //     link.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csvContent);
+    //     link.download = 'form_data.csv';
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // };
     
 
-    const handleSubmit = (e:any) => {
+    const handleSubmit = async (e:any) => {
         e.preventDefault();
 
         /* Chama a função para salvar os dados em CSV*/
-        saveDataToCSV(InformacoesFormulario);
+        // saveDataToCSV(InformacoesFormulario);
 
         // Primeiro, converte o objeto InformacoesFormulario para uma string JSON pois vou enviar para o LocalStorage
         const dadosFormularioJson = JSON.stringify(InformacoesFormulario);
@@ -66,11 +63,35 @@ export default function Contact() {
         // Em seguida, salva essa string no localStorage com a chave 'InformacoesFormulario'
         localStorage.setItem('InformacoesFormulario', dadosFormularioJson);
 
-        // Enviar os dados para o Java
-        enviarDadosParaJava(InformacoesFormulario);
+        // Enviar os dados para a API
+        try {
+            const resposta = await fetch('http://localhost:5000/api/dados-formulario-contato', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(InformacoesFormulario)
+            });
+    
+            if (!resposta.ok) {
+                throw new Error('Erro ao enviar dados para a API');
+            }
+    
+            // Se a solicitação for bem-sucedida, você pode redirecionar o usuário para outra página
+            // ou exibir uma mensagem de sucesso
+
+            // Mostrar os dados em json:
+            const dados = await resposta.json();
+            console.log(dados);
+
+            console.log('Dados enviados com sucesso para a API');
+        } catch (erro) {
+            console.error('Erro ao enviar dados para a API:', erro);
+        }
+
     };
 
-    // Enviar os dados para o LocalStorage
+    
 
     return (
 
@@ -94,13 +115,7 @@ export default function Contact() {
                             <h1>Contato</h1>
                         </div> 
 
-                        <div className="hidden md:flex self-center px-8 py-3 font-sen text-2xl rounded bg-segunda dark:bg-[#3EA0E7] dark:text-white text-white">
-
-                            <Link href="/Login">
-                                <button>Entrar</button>
-                            </Link>
-
-                        </div> 
+                    
 
                     </div> 
                     

@@ -4,7 +4,7 @@
 
 export async function enviarDadosParaJava(InformacoesFormulario: any) {
     try {
-      const resposta = await fetch('http://localhost:8080/seu-endpoint-java', {
+      const resposta = await fetch('http://localhost:5000/api/dados-formulario', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

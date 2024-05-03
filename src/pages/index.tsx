@@ -1,26 +1,25 @@
 
 import HomePage from '../components/Home'
 import DetailsCompany from '../components/DetailsCompany'
-// import About from '../app/components/About'
-// import AboutService from '../app/components/AboutService'
-// import AboutSalesForce from '@/app/components/AboutSalesForce'
-// import ModalLogin from '@/app/components/ModalLogin'
-// import AboutForms from '@/app/components/AboutForms'
+import About from '../components/About'
+import AboutService from '../components/AboutService'
+import AboutSalesForce from '../components/AboutSalesForce'
+import ModalLogin from '../components/ModalLogin'
+import AboutForms from '../components/AboutForms'
 // import InfiniteMovingCardsDemo from './CarroselPartner'
-
 
 export default function Home() {
   return (
     <div>
       
-      {/* <ModalLogin/> */}
-      <HomePage />
+      <ModalLogin/>
+      <HomePage />  
       <DetailsCompany/>
-      {/*<About />
+      <About />
       <AboutService />
       <AboutSalesForce/>
       <AboutForms/>
-      <InfiniteMovingCardsDemo/> */}
+      {/*<InfiniteMovingCardsDemo/> */}
 
     </div>
   )

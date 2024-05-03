@@ -102,3 +102,39 @@ interface Window {
 }
 
 7. Ajustar o arquivo tsconfig.json e inserir no campo compilerOptions: "typeRoots": ["./node_modules/@types", "./types"]
+
+
+## Criação da API em Node
+
+npm install express
+
+Rota:
+meu-projeto/
+├── node_modules/
+├── public/
+├── src/
+├── server/
+│   └── api.js
+├── .gitignore
+├── package-lock.json
+└── package.json
+
+Dentro do arquivo api.js
+
+// api.js
+const express = require('express');
+const app = express();
+const PORT = 5000;
+
+app.get('/api/mensagem', (req, res) => {
+    res.json({ mensagem: 'Olá, mundo!' });
+});
+
+app.listen(PORT, () => {
+    console.log(`API rodando em http://localhost:${PORT}`);
+});
+
+Para complementar:
+npm install cors
+
+

@@ -34,17 +34,17 @@ export default function DetailsCompany(){
                     </p>
                 </TextReader>
 
-                    <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                    <div className="flex flex-col gap-5 md:gap-0 space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mb-10 md:mb-0">
                         
-                    <TextReader text="Produtos">                        
-                        <Link rel="noopener noreferrer" href="/Product" className="px-8 py-3 text-xl font-sen rounded dark:bg-segunda dark:text-gray-50 bg-segunda text-white hover:bg-white hover:text-[#3EA0E7]">Produtos</Link>
-                    </TextReader>
+                        <TextReader text="Produtos">                        
+                            <Link rel="noopener noreferrer" href="/Product" className="px-8 py-3 text-xl font-sen rounded dark:bg-segunda dark:text-gray-50 bg-segunda text-white hover:bg-white hover:text-[#3EA0E7]">Produtos</Link>
+                        </TextReader>
 
-                    <TextReader text="Contato">
+                        <TextReader text="Contato">
 
-                        <Link rel="noopener noreferrer" href="/Contact" className="px-8 py-3 text-xl font-sen border rounded dark:border-white bg-white text-[#3EA0E7] hover:bg-segunda hover:text-white">Contato</Link>
-                    
-                    </TextReader>
+                            <Link rel="noopener noreferrer" href="/Contact" className="px-8 py-3 text-xl font-sen border rounded dark:border-white bg-white text-[#3EA0E7] hover:bg-segunda hover:text-white">Contato</Link>
+                        
+                        </TextReader>
 
                     </div>
                     
