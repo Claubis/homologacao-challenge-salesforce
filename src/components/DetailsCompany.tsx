@@ -6,6 +6,9 @@ import Link from "next/link";
 /* Importação de componentes  */
 import TextReader from "./TextReader";
 
+/* Impotação do modulo de animação */
+import { motion } from "framer-motion"
+
 export default function DetailsCompany(){
 
     return(
@@ -21,6 +24,13 @@ export default function DetailsCompany(){
                 </div>
 
                 <div className="flex flex-col justify-center p-0 md:p-6 text-center rounded-sm lg:max-w-md xl:max-w-4xl lg:text-left">
+
+                <motion.div
+                initial={{opacity:0, x:-100}}
+                whileInView={{opacity:1, x:0}}
+                exit={{opacity:0, x:-100}}
+                transition={{duration:0.5}}
+                > 
 
                 <TextReader text="Transformando a maneira como você conecta com clientes">
 
@@ -48,7 +58,7 @@ export default function DetailsCompany(){
 
                     </div>
                     
-
+                    </motion.div>
 
                 </div>
 

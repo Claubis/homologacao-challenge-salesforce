@@ -12,7 +12,7 @@ export default function Footer(){
             
             <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
                 
-                <div className="lg:w-1/3 flex justify-center">
+                <div className="lg:w-1/3 flex justify-start md:justify-center">
                     
                     <Link rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 lg:justify-start">
                         
@@ -26,7 +26,8 @@ export default function Footer(){
 
                 </div>
                 
-                <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 md:grid-cols-4">
+                <div className="flex flex-col justify-center md:grid gap-x-3 gap-y-8 lg:w-2/3 md:grid-cols-4">
+                    
                     <div className="space-y-3">
                     
                     <TextReader text="Produtos">

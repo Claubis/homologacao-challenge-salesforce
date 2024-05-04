@@ -138,3 +138,19 @@ Para complementar:
 npm install cors
 
 
+## Processo de animação na página
+
+Irei inserir ações da biblioteca Frame Motion
+
+Site: https://www.framer.com/motion/introduction/
+
+1. Instalação: npm install framer-motion
+
+2. Importação em cada componente criado e que irei precisar para ter/criar uma animação:  import { motion } from "framer-motion"
+
+## Login simplificado usando Google
+
+1. npm install googleapis
+
+
+

@@ -27,6 +27,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   
   const [isClient, setIsClient] = useState(false);
 
+
   useEffect(() => {
     setIsClient(true);
   }, []);

@@ -4,9 +4,6 @@
 /* Importar UseState*/
 import { useState } from 'react'
 
-/* Importação do LINK para direcionar para outra página */
-import Link from 'next/link';
-
 /* Importações para renderizar as imagens */
 import Image from 'next/image'
 
@@ -69,31 +66,33 @@ export default function FormDescoberta() {
 
     return (
 
-        <div className="flex md:flex md:justify-center items-center dark:bg-gray-700 dark:text-white min-h-[100vh]">
+        <div className="grid grid-col lg:flex justify-center items-center dark:bg-gray-700 dark:text-white min-h-[100vh] lg:p-10">
             
-            <div className="flex flex-col justify-center items-center w-[40%]">
+            <div className="flex flex-col gap-10 mb-10 md:mb-0 lg:max-w-xl p-10 justify-center items-center">
 
-                    <div className="space-y-2 flex flex-col leading-10 gap-5">
-                        
-                        <h2 className="text-4xl font-manrope leading-tight lg:text-5xl text-sen">Dê o próximo passo</h2>
-                        
-                        <p className="dark:text-white font-manrope text-">Para descobrir quais soluções podem catapultar sua empresa para o próximo nível, convidamos você a preencher nosso formulário de descoberta. Ao final, você receberá uma recomendação personalizada, adaptada às metas e desafios únicos do seu negócio, podendo ser uma combinação perfeita de um, dois ou todos os três módulos de CRM mencionados.</p>
+                <div className=" flex flex-col gap-5">
+                    
+                    <h2 className="text-4xl font-manrope leading-tight lg:text-5xl uppercase">Dê o próximo passo</h2>
+                    
+                    <p className="dark:text-white font-manrope text-lg md:text-xl leading-10 ">Para descobrir quais soluções podem catapultar sua empresa para o próximo nível, convidamos você a preencher nosso formulário de descoberta. Ao final, você receberá uma recomendação personalizada, adaptada às metas e desafios únicos do seu negócio, podendo ser uma combinação perfeita de um, dois ou todos os três módulos de CRM mencionados.</p>
 
-                        <p className="dark:text-white font-manrope text-xl">Não perca esta oportunidade de aprimorar seu relacionamento com clientes e impulsionar o crescimento do seu negócio. Preencha o formulário agora e comece sua jornada para uma gestão de relacionamento com clientes sem precedentes.</p>
+                    <p className="dark:text-white font-manrope text-lg md:text-xl leading-10">Não perca esta oportunidade de aprimorar seu relacionamento com clientes e impulsionar o crescimento do seu negócio. Preencha o formulário agora e comece sua jornada para uma gestão de relacionamento com clientes sem precedentes.</p>
 
-                    </div>
+                </div>
 
-                    <Image src="/assets/FormDescoberta/imagem.png" alt="Imagem sobre contato" width={400} height={500}/>
+                <div>
+                    <Image src="/assets/Details/imagem4.png" alt="Imagem sobre contato" width={300} height={500}/>
+                </div>
 
             </div>
             
-            <div className='bg-white p-10 dark:bg-gray-700 flex flex-col md:flex md:justify-center md:items-center'>
+            <div className='bg-white dark:bg-gray-700 w-full p-5'>
                 
-                <form className='flex flex-col bg-primeira p-5 rounded' action="#" onSubmit={handleSubmit}>
+                <form className='bg-primeira p-5 rounded' action="#" onSubmit={handleSubmit}>
                     
                     <div className="flex justify-between items-cente mb-10">
                         
-                        <div className=" text-[#667085] w-full font-sen text-4xl h-20 flex justify-start items-center dark:text-white">
+                        <div className=" text-[#667085] font-sen text-4xl flex justify-start items-center dark:text-white uppercase mt-10">
                             <h1>Formulário de Descoberta</h1>
                         </div> 
 
@@ -175,7 +174,7 @@ export default function FormDescoberta() {
                             <h6>Produtos</h6>
                         </div>
 
-                        <div className="flex justify-start gap-5 text-xl font-sen mb-10">
+                        <div className="text-xl font-sen flex flex-col gap-3">
 
                             <div className="flex gap-3">
 
@@ -222,11 +221,18 @@ export default function FormDescoberta() {
                         
                         </div> {/* Fim da div empresa-group */}
 
-                        <div className="flex flex-col gap-3">
+                        <div className="flex flex-col gap-3 pt-5 md:mt-0">
                             
                             <label htmlFor="necessidade_empresa_ques" className="font-sen text-xl text-[#667085] dark:text-white">Necessidade da empresa</label>
 
-                            <input id="necessidade_empresa_ques" type="text" name="necessidade_empresa_ques" placeholder="Comente aqui sua necessidade" required value={InformacoesFormulario.empresa_ques} onChange={handleChange} className='p-3 font-sen text-md rounded-sm bg-slate-100 mb-20'/>
+                            <textarea 
+                            name="necessidade_empresa_ques" id="necessidade_empresa_ques" 
+                            placeholder="Comente aqui sua necessidade" 
+                            value={InformacoesFormulario.empresa_ques} 
+                            onChange={handleChange} 
+                            className='p-3 font-sen text-md rounded-sm bg-slate-100 mb-10'
+                            >
+                            </textarea>
 
                         </div> 
 

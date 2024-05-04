@@ -19,6 +19,10 @@ export default function Navbar(){
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     return(
 
         <header className="p-4 dark:bg-gray-700 dark:text-white">
@@ -32,6 +36,8 @@ export default function Navbar(){
                 </Link>
 
                 <ul className={`items-stretch lg:flex ${menuOpen ? 'block' : 'hidden'}`}>
+
+                    <button onClick={closeMenu} className="lg:hidden">Fechar</button>
                     
                     <li className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope">
                         

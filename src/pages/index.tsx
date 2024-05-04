@@ -4,13 +4,16 @@ import DetailsCompany from '../components/DetailsCompany'
 import About from '../components/About'
 import AboutService from '../components/AboutService'
 import AboutSalesForce from '../components/AboutSalesForce'
+import InfoSalesForce from '@/components/InfoSalesForce'
 import ModalLogin from '../components/ModalLogin'
 import AboutForms from '../components/AboutForms'
-// import InfiniteMovingCardsDemo from './CarroselPartner'
+import InfiniteMovingCardsDemo from './CarroselPartner'
+
 
 export default function Home() {
+
   return (
-    <div>
+    <div> 
       
       <ModalLogin/>
       <HomePage />  
@@ -18,8 +21,9 @@ export default function Home() {
       <About />
       <AboutService />
       <AboutSalesForce/>
+      <InfoSalesForce/>
       <AboutForms/>
-      {/*<InfiniteMovingCardsDemo/> */}
+      <InfiniteMovingCardsDemo/>
 
     </div>
   )
