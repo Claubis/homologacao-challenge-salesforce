@@ -39,7 +39,7 @@ export default function Navbar(){
 
                     <button onClick={closeMenu} className="lg:hidden">Fechar</button>
                     
-                    <li className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope">
+                    <li className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
                         
                         <TextReader text="Produto">
                             
@@ -49,7 +49,7 @@ export default function Navbar(){
 
                     </li>
 
-                    <li className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope">
+                    <li className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
 
                         <TextReader text="Projeto">
 
@@ -76,9 +76,9 @@ export default function Navbar(){
 
                 <div className="items-center flex-shrink-0 hidden lg:flex">
                     
-                <TextReader text="Sign in">
+                <TextReader text="Acessar">
 
-                    <Link href="/Login"><button className="self-center px-8 py-3 rounded font-sen hover:text-[#3EA0E7]">Sign in</button></Link>
+                    <Link href="/Login"><button className="self-center px-8 py-3 rounded font-sen hover:text-[#3EA0E7]">Acessar</button></Link>
                     
                 </TextReader>
                     

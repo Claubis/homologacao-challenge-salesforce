@@ -13,10 +13,10 @@ export default function AboutForms(){
     return(
         <section className="p-4 lg:p-8 dark:bg-gray-700 dark:text-white bg-gray-200">
             
-            <div className="font-manrope text-4xl md:text-5xl mt-20 mb-20 text-start md:text-center">
+            <div className="font-bold text-4xl md:text-5xl mt-20 mb-20 text-start md:text-center">
 
                 <TextReader text="Saiba sobre nossos serviços e meios de contatos">
-                    <h1>Saiba sobre nossos serviços e meios de contatos</h1>
+                    <h1>Saiba sobre nossos serviços <br />e meios de contatos</h1>
                 </TextReader>
             </div>
 

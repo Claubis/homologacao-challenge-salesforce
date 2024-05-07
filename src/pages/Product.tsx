@@ -21,7 +21,7 @@ export default function Product(){
                         <div className="space-y-2">
 
                             <TextReader text="Por que a Salesforce é Diferente?">
-                                <h1 rel="noopener noreferrer" className="inline-block text-4xl md:text-5xl font-manrope text-white">Por que a Salesforce é Diferente?</h1>
+                                <h1 rel="noopener noreferrer" className="inline-block text-4xl md:text-5xl font-bold text-white">Por que a Salesforce é Diferente?</h1>
                             </TextReader>   
                         
                         </div>
@@ -59,7 +59,7 @@ export default function Product(){
                         
                         <TextReader text="Capacitando empresas com dados Inteligentes">
                             
-                            <h1 className="text-4xl font-manrope md:tracking-tight md:text-5xl">Capacitando empresas com dados Inteligentes</h1>
+                            <h1 className="text-4xl font-bold md:tracking-tight md:text-5xl">Capacitando empresas com dados Inteligentes</h1>
 
                         </TextReader>
 
@@ -79,18 +79,6 @@ export default function Product(){
 
                     <div className="flex flex-col md:flex flex-wrap py-6 gap-2 border-t border-dashed dark:border-gray-600">
                         
-                        <TextReader text="SalesCloud">
-                        <p rel="noopener noreferrer"  className="px-3 py-1 rounded-sm hover:underline dark:bg-[#3EA0E7] dark:text-gray-50 font-manrope">#SalesCloud</p>
-                        </TextReader>
-
-                        <TextReader text="Einstein">
-                        <p rel="noopener noreferrer"  className="px-3 py-1 rounded-sm hover:underline dark:bg-[#3EA0E7] dark:text-gray-50 font-manrope">#Einstein</p>
-                        </TextReader>
-
-                        <TextReader text="AppExchange">
-                        <p rel="noopener noreferrer"  className="px-3 py-1 rounded-sm hover:underline dark:bg-[#3EA0E7] dark:text-gray-50 font-manrope">#AppExchange</p>
-                        </TextReader>
-
                     </div>
 
                     <div className="space-y-2 flex flex-col gap-5">
@@ -105,7 +93,7 @@ export default function Product(){
                             <li>
                                 
                                 <TextReader text="Seja para aumentar vendas">
-                                <p rel="noopener noreferrer"  className="hover:underline font-manrope">Seja para aumentar vendas</p>
+                                <p rel="noopener noreferrer"  className="font-manrope">Seja para aumentar vendas</p>
 
                                 </TextReader>
 
@@ -114,14 +102,14 @@ export default function Product(){
                             <li>
 
                                 <TextReader text="Melhorar o atendimento ao cliente">
-                                <p rel="noopener noreferrer" className="hover:underline font-manrope">Melhorar o atendimento ao cliente</p>
+                                <p rel="noopener noreferrer" className="font-manrope">Melhorar o atendimento ao cliente</p>
                                 </TextReader>
                             </li>
 
                             <li>
 
                                 <TextReader text="ou criar campanhas de marketing mais eficazes">
-                                <p rel="noopener noreferrer" className="hover:underline font-manrope">ou criar campanhas de marketing mais eficazes.
+                                <p rel="noopener noreferrer" className="font-manrope">ou criar campanhas de marketing mais eficazes.
                                 </p>
                                 </TextReader>
                             </li>

@@ -38,7 +38,7 @@ export default function NavSolution() {
     { name: 'Documentação', description: 'Conheça o que foi criado e como utilizar cada recurso para acessibilidade', href: '/Documentation', icon: FolderMinusIcon},
     { name: 'Navegação com TAB', description: 'Navegue pelos nossos conteúdos utilizando a tecla TAB. Cada sessão e conteúdo que você acessar ficará em foco e destacado, facilitando a seleção e ação que você deseja realizar.', href: '/Documentation', icon: ArrowRightStartOnRectangleIcon},
     { name: 'Tema', description: 'Defina entre claro ou escuro', href: '#', icon: MoonIcon, action: 'toggleDarkMode' },
-    { name: 'Leitor de tela', description: 'Leitura parcial ou total dos textos disponíveis na nossa página', href: '#', icon: MegaphoneIcon, action: 'useTextReader'  },
+    { name: 'Leitor de tela', description: 'Leitura parcial, basta clicar em cada texto', href: '#', icon: MegaphoneIcon, action: 'useTextReader'  },
     { name: 'Configuração', description: "Ajuste a cor das fontes", href: '#', icon: Cog6ToothIcon },
     { name: 'Idioma', description: 'Defina o idioma da sua página', href: '/ModalIdioma', icon: GlobeAltIcon, action:'ChangeLanguage' },
     { name: 'Aumentar fonte', description: 'Defina o tamanho da fonte usando a seta para cima para aumentar a fonte', href: '#', icon: ArrowUpIcon, action: 'useToggleFontIncrease' },
@@ -101,7 +101,7 @@ export default function NavSolution() {
   return (
 
     <Popover className="relative ">
-      <Popover.Button className="inline-flex items-center gap-x-1 font-sen leading-6 text-gray-900">
+      <Popover.Button className="inline-flex items-center gap-x-1 font-bold leading-6">
         
         <TextReader text="Acessibilidade">
             <span className='dark:text-[#FFFF] dark:border-[#FFFF] font-manrope'>Acessibilidade</span>
@@ -121,12 +121,12 @@ export default function NavSolution() {
       >
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4 dark:bg-gray-700">
           
-          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white font-sen leading-6 shadow-lg ring-1 ring-gray-900/5 dark:bg-gray-700">
+          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white font-sen leading-6 shadow-lg ring-1 ring-gray-900/5 dark:bg-gray-700 ">
             
-            <div className="p-4">
+            <div className="p-2">
               {solutions.map((item) => (
                 
-                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 dark:text-white dark:hover:bg-gray-600" onClick={() => handleClick(item.action, item.href)}>
+                <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 dark:text-white dark:hover:bg-gray-600 hover:bg-segunda" onClick={() => handleClick(item.action, item.href)}>
                   
                   <div className="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white dark:text-white dark:group-hover:bg-gray-600">
                     <item.icon className="h-6 w-6 text-gray-600 group-hover:text-[#3EA0E7]" aria-hidden="true" />

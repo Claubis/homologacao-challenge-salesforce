@@ -18,7 +18,7 @@ export default function AboutServices() {
                     <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200  dark:bg-gray-700">
                         
                     <TextReader text="Serviços">
-                        <h3 className="mt-10 md:mt-0 text-4xl md:text-6xl font-manrope  text-[#3EA0E7] dark:text-white">Serviços</h3>
+                        <h3 className="mt-10 md:mt-0 text-4xl md:text-6xl font-bold dark:text-white">Serviços</h3>
                     </TextReader>
 
                     <TextReader text="Utilizando o Salesforce Customer 360, nossa plataforma de CRM integrada, sua empresa oferece experiências personalizadas para seus clientes. Nossa solução fornece produtos poderosos e conectados para melhorar seu marketing, vendas, commerce, atendimento ao cliente, TI . e muito mais.">

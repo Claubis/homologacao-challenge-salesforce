@@ -11,10 +11,10 @@ export default function AboutSalesForce(){
 
         <section className="p-6 bg-white dark:bg-gray-700 dark:text-gray-50">
             
-            <div className="mx-auto flex flex-col p-4 space-y-5">
+            <div className="mx-auto flex flex-col p-4 space-y-5 gap-3">
                 
             <TextReader text="Sobre a salesforce">
-                <h1 className="text-4xl md:text-6xl font-manrope leading-none text-start  text-[#3EA0E7] mt-10">Sobre a salesforce</h1>
+                <h1 className="text-4xl md:text-6xl font-bold leading-none text-start mt-10">Sobre a salesforce</h1>
             </TextReader>
 
             <TextReader text="A Salesforce é uma empresa de software que foca na solução de gerenciamento de relacionamento para aproximar empresas e pessoas.">

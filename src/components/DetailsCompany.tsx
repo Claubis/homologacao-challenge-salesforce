@@ -34,7 +34,7 @@ export default function DetailsCompany(){
 
                 <TextReader text="Transformando a maneira como você conecta com clientes">
 
-                    <h1 className="text-2xl md:text-6xl font-manrope leading-8 md:leading-none text-start mt-10 md:mt-0">Transformando a maneira como você conecta com clientes
+                    <h1 className="text-2xl md:text-6xl font-bold leading-8 md:leading-none text-start mt-10 md:mt-0">Transformando a maneira como você conecta com clientes
                     </h1>
                 </TextReader>
 

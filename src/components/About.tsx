@@ -12,7 +12,7 @@ export default function About() {
                 
             <TextReader text="O que é a SalesForce">
                 
-                <h2 className="md:pl-10 text-4xl md:text-6xl font-manrope text-[#3EA0E7] mt-10 text-start mb-10 md:mb-0">O  que é a Salesforce?</h2>
+                <h2 className="md:pl-10 text-4xl md:text-6xl font-bold mt-10 text-start mb-10 md:mb-0">O  que é a Salesforce?</h2>
 
             </TextReader>
 

@@ -21,7 +21,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Navegação">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Navegação</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Navegação</h3>
                         </TextReader>
 
                             <div className="flex justify-start items-center gap-3 mb-5">
@@ -31,7 +31,7 @@ export default function Documentation(){
                                 </svg>
 
                                 <TextReader text="Curiosidade">
-                                <h2 className="font-manrope text-xl md:text-2xl">Curiosidade</h2>
+                                <h2 className="font-bold text-xl md:text-2xl">Curiosidade</h2>
                                 </TextReader>
 
                             </div>
@@ -66,7 +66,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                         </div>
@@ -94,7 +94,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Processo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                     </TextReader>
 
                                 </div>
@@ -174,7 +174,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Vídeo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                     </TextReader>
                                 </div>
 
@@ -187,7 +187,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Leitor de tela">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Leitor de tela</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Leitor de tela</h3>
                         </TextReader>
 
                             <div className="flex justify-start items-center gap-3 mb-5">
@@ -197,7 +197,7 @@ export default function Documentation(){
                                 </svg>
 
                                 <TextReader text="Curiosidade">
-                                <h2 className="font-manrope text-xl md:text-2xl">Curiosidade</h2>
+                                <h2 className="font-bold text-xl md:text-2xl">Curiosidade</h2>
                                 </TextReader>
 
                             </div>
@@ -237,7 +237,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                 </div>
@@ -263,7 +263,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Processo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                     </TextReader>
 
                                 </div>
@@ -278,7 +278,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Vídeo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                     </TextReader>
                                 </div>
 
@@ -291,7 +291,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Tema">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Tema</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Tema</h3>
                         </TextReader>
 
                         <div className="flex justify-start items-center gap-3 mb-5">
@@ -301,7 +301,7 @@ export default function Documentation(){
                                 </svg>
 
                                 <TextReader text="Curiosidade">
-                                <h2 className="font-manrope text-xl md:text-2xl">Curiosidade</h2>
+                                <h2 className="font-bold text-xl md:text-2xl">Curiosidade</h2>
                                 </TextReader>
                             </div>
 
@@ -341,7 +341,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                 </div>
@@ -366,7 +366,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Processo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                     </TextReader>
 
                                 </div>
@@ -381,7 +381,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Vídeo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                     </TextReader>
                                 </div>
 
@@ -393,7 +393,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Idioma">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Idioma</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Idioma</h3>
                         </TextReader>
 
                         <div className="flex justify-start items-center gap-3 mb-5">
@@ -403,7 +403,7 @@ export default function Documentation(){
                                 </svg>
 
                                 <TextReader text="Curiosidade">
-                                <h2 className="font-manrope text-xl md:text-2xl">Curiosidade</h2>
+                                <h2 className="font-bold text-xl md:text-2xl">Curiosidade</h2>
                                 </TextReader>
 
                             </div>
@@ -440,7 +440,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                 </div>
@@ -468,7 +468,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Processo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                     </TextReader>
 
                                 </div>
@@ -483,7 +483,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Vídeo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                     </TextReader>
                                 </div>
 
@@ -496,7 +496,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Libras">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Libras</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Libras</h3>
                         </TextReader>
 
                         <div className="flex justify-start items-center gap-3 mb-5">
@@ -506,7 +506,7 @@ export default function Documentation(){
                                 </svg>
 
                                 <TextReader text="Curiosidade">
-                                <h2 className="font-manrope text-xl md:text-2xl">Curiosidade</h2>
+                                <h2 className="font-bold text-xl md:text-2xl">Curiosidade</h2>
                                 </TextReader>
 
                             </div>
@@ -543,7 +543,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descriçãoe">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                     
@@ -574,7 +574,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Processo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                     </TextReader>
 
                                 </div>
@@ -589,7 +589,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Vídeo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                     </TextReader>
 
                                 </div>
@@ -603,7 +603,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Logine">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Login</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Login</h3>
                         </TextReader>
 
                         <div className="flex justify-start items-center gap-3 mb-5">
@@ -614,7 +614,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                 </div>
@@ -641,7 +641,7 @@ export default function Documentation(){
 
 
                                     <TextReader text="Processo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                     </TextReader>
 
                                 </div>
@@ -656,7 +656,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Vídeo">
-                                    <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                    <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                     </TextReader>
 
                                 </div>
@@ -669,7 +669,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Chatbot">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Chatbot</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Chatbot</h3>
                         </TextReader>
 
                         <div className="flex justify-start items-center gap-3 mb-5">
@@ -680,7 +680,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                 </div>
@@ -705,7 +705,7 @@ export default function Documentation(){
                                                 </svg>
 
                                                 <TextReader text="Processo">
-                                                <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                                <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                                 </TextReader>
 
                                             </div>
@@ -720,7 +720,7 @@ export default function Documentation(){
                                             </svg>
 
                                             <TextReader text="Vídeo">
-                                            <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                            <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                             </TextReader>
                                         </div>
 
@@ -733,7 +733,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Ajuste da fonte com o teclad">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Ajuste da fonte com o teclado</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Ajuste da fonte com o teclado</h3>
                         </TextReader>
 
                         <div className="flex justify-start items-center gap-3 mb-5">
@@ -744,7 +744,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                 </div>
@@ -769,7 +769,7 @@ export default function Documentation(){
                                                 </svg>
 
                                                 <TextReader text="Processo">
-                                                <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                                <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                                 </TextReader>
 
                                             </div>
@@ -784,7 +784,7 @@ export default function Documentation(){
                                             </svg>
 
                                             <TextReader text="Vídeo">
-                                            <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                            <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                             </TextReader>
                                         </div>
 
@@ -797,7 +797,7 @@ export default function Documentation(){
                     <div>
                         
                     <TextReader text="Vídeos com descrição<">
-                        <h3 className="mb-5 text-2xl md:text-4xl font-manrope text-red-700 dark:text-white">Vídeos com descrição</h3>
+                        <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Vídeos com descrição</h3>
                         </TextReader>
 
                         <div className="flex justify-start items-center gap-3 mb-5">
@@ -808,7 +808,7 @@ export default function Documentation(){
                                     </svg>
 
                                     <TextReader text="Descrição">
-                                    <h2 className="font-manrope text-xl md:text-2xl">Descrição</h2>
+                                    <h2 className="font-bold text-xl md:text-2xl">Descrição</h2>
                                     </TextReader>
 
                                 </div>
@@ -833,7 +833,7 @@ export default function Documentation(){
                                                 </svg>
 
                                                 <TextReader text="Processo">
-                                                <h4 className="font-manrope text-xl md:text-2xl">Processo</h4>
+                                                <h4 className="font-bold text-xl md:text-2xl">Processo</h4>
                                                 </TextReader>
 
                                             </div>
@@ -848,7 +848,7 @@ export default function Documentation(){
                                             </svg>
 
                                             <TextReader text="Vídeo">
-                                            <h4 className="font-manrope text-xl md:text-2xl">Vídeo</h4>
+                                            <h4 className="font-bold text-xl md:text-2xl">Vídeo</h4>
                                             </TextReader>
                                         </div>
 

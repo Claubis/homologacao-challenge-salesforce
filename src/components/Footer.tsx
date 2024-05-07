@@ -3,6 +3,7 @@
 import TextReader from "./TextReader";
 import Link from "next/link";
 
+import About from '../components/About'
 
 export default function Footer(){
     return(
@@ -32,27 +33,15 @@ export default function Footer(){
                     
                     <TextReader text="Produtos">
 
-                        <h3 className="tracking-wide uppercase dark:text-[#3EA0E7] font-manrope text-xl">Produtos</h3>
+                        <h3 className="tracking-wide uppercase dark:text-[#3EA0E7] font-bold text-xl">Produtos</h3>
 
                     </TextReader>
 
                         <ul className="space-y-1 font-manrope text-lg">
 
                             <li>
-                                <TextReader text="Sobre os produtos">
-                                    <Link rel="noopener noreferrer" href="/Product">Sobre os produtos</Link>
-                                </TextReader>
-                            </li>
-
-                            <li>
                                 <TextReader text="Conheça os produtos">
                                     <Link rel="noopener noreferrer" href="/Product">Conheça os produtos</Link>
-                                </TextReader>
-                            </li>
-
-                            <li>
-                                <TextReader text="Chatbot">
-                                    <Link rel="noopener noreferrer" href="#">Chatbot</Link>
                                 </TextReader>
                             </li>
 
@@ -62,14 +51,14 @@ export default function Footer(){
                     <div className="space-y-3 font-manrope text-lg">
 
                     <TextReader text="Empresa">
-                        <h3 className="tracking-wide uppercase dark:text-[#3EA0E7] font-manrope text-xl">Empresa</h3>
+                        <h3 className="tracking-wide uppercase dark:text-[#3EA0E7] font-bold text-xl">Empresa</h3>
                     </TextReader>
 
                         <ul className="space-y-1">
 
                             <li>
                                 <TextReader text="Sobre">
-                                    <Link rel="noopener noreferrer" href="./components/About">Sobre</Link>
+                                    <Link rel="noopener noreferrer" href="../components/About">Sobre</Link>
                                 </TextReader>
                             </li>
 
@@ -97,7 +86,7 @@ export default function Footer(){
                     <div className="space-y-3 font-manrope text-lg">
 
                         <TextReader text="Projeto">
-                            <h3 className="uppercase dark:text-[#3EA0E7] font-manrope text-xl">Projeto</h3>
+                            <h3 className="uppercase dark:text-[#3EA0E7] font-bold text-xl">Projeto</h3>
                         </TextReader>
 
                         <ul className="space-y-1">
@@ -119,7 +108,7 @@ export default function Footer(){
                     <div className="space-y-3">
 
                     <TextReader text="Redes sociais">
-                        <div className="uppercase dark:text-[#3EA0E7] font-manrope text-xl">Redes sociais</div>
+                        <div className="uppercase dark:text-[#3EA0E7] font-bold text-xl">Redes sociais</div>
                     </TextReader>
 
                         <div className="flex justify-start space-x-3">

@@ -8,6 +8,9 @@ import { useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 
+/*Importação dos componentes */
+import TextReader from "../components/TextReader";
+
 
 export default function Contact() {
 
@@ -112,10 +115,12 @@ export default function Contact() {
                     <div className="flex justify-between items-center">
                         
                         <div className=" text-[#667085] w-full font-sen text-4xl h-20 flex justify-start items-center dark:text-white">
-                            <h1>Contato</h1>
-                        </div> 
 
-                    
+                            <TextReader text="Contato">
+                                <h1>Contato</h1>
+                            </TextReader>
+
+                        </div> 
 
                     </div> 
                     
@@ -123,7 +128,9 @@ export default function Contact() {
                         
                         <div className="flex flex-col gap-3">
                             
-                            <label htmlFor="nome_contato" className="font-sen text-xl text-[#667085] dark:text-white">Nome</label>
+                            <TextReader text="Nome">
+                                <label htmlFor="nome_contato" className="font-sen text-xl text-[#667085] dark:text-white">Nome</label>
+                            </TextReader>
 
                             <input id="nome_contato" type="text" name="nome" placeholder="Digite seu nome" required value={InformacoesFormulario.nome} onChange={handleChange} className='p-3 font-sen text-md rounded-sm bg-slate-100'/>
 
@@ -131,7 +138,9 @@ export default function Contact() {
 
                         <div className="flex flex-col gap-3">
                             
-                            <label htmlFor="email_contato" className="font-sen text-xl text-[#667085] dark:text-white">E-mail</label>
+                            <TextReader text="E-mail">
+                                <label htmlFor="email_contato" className="font-sen text-xl text-[#667085] dark:text-white">E-mail</label>
+                            </TextReader>
 
                             <input id="email_contato" type="mail" name="email" placeholder="seuemail@gmail.com" required value={InformacoesFormulario.email} onChange={handleChange} className='p-3 font-sen text-md rounded-sm bg-slate-100'/>
 
@@ -139,7 +148,9 @@ export default function Contact() {
 
                         <div className="flex flex-col gap-3">
                             
-                            <label htmlFor="telefone_contato" className="font-sen text-xl text-[#667085] dark:text-white">Telefone</label>
+                            <TextReader text="Telefone">
+                                <label htmlFor="telefone_contato" className="font-sen text-xl text-[#667085] dark:text-white">Telefone</label>
+                            </TextReader>
 
                             <input id="telefone_contato" type="number" name="telefone" placeholder="(xx) xxxxx-xxxx" required value={InformacoesFormulario.telefone} onChange={handleChange} className='p-3 font-sen text-md rounded-sm bg-slate-100'/>
 
@@ -147,7 +158,9 @@ export default function Contact() {
 
                         <div className="flex flex-col gap-3">
                            
-                            <label htmlFor="segmento_contato" className="font-sen text-xl text-[#667085] dark:text-white">Segmento</label>
+                            <TextReader text="Segmento">
+                                <label htmlFor="segmento_contato" className="font-sen text-xl text-[#667085] dark:text-white">Segmento</label>
+                            </TextReader>
 
                             <input id="segmento_contato" type="text" name="segmento" placeholder="Segmento da empresa" required value={InformacoesFormulario.segmento} onChange={handleChange} className='p-3 font-sen text-md rounded-sm bg-slate-100' />
 
@@ -156,20 +169,24 @@ export default function Contact() {
 
                         <div className="flex flex-col gap-3">
                             
-                            <label htmlFor="cargo_contato" className="font-sen text-xl text-[#667085] dark:text-white">Cargo</label>
+                            <TextReader text="Cargo">
+                                <label htmlFor="cargo_contato" className="font-sen text-xl text-[#667085] dark:text-white">Cargo</label>
+                            </TextReader>
 
                             <input id="cargo_contato" type="text" name="cargo" placeholder="Digite seu cargo" required value={InformacoesFormulario.cargo} onChange={handleChange} className='p-3 font-sen text-md rounded-sm bg-slate-100'/>
 
                         </div> 
-
-                       
 
                     </div> 
 
                     <div className="grid md:flex md:flex-col md:justify-start">
                         
                         <div className="font-sen text-2xl mb-5">
-                            <h6>Tamanho da empresa</h6>
+
+                            <TextReader text="Tamanho da empresa">
+                                <h6>Tamanho da empresa</h6>
+                            </TextReader>
+
                         </div>
 
                         <div className="grid md:flex justify-start gap-5 text-xl font-sen mb-10">
@@ -178,7 +195,9 @@ export default function Contact() {
 
                                 <input id="tamanho_empresa_pequena" type="radio" name="tamanho" value="pequena" onChange={handleChange} />
 
-                                <label htmlFor="tamanho_empresa_pequena">Pequena</label>
+                                <TextReader text="Pequena">
+                                    <label htmlFor="tamanho_empresa_pequena">Pequena</label>
+                                </TextReader>
 
                             </div> 
 
@@ -186,7 +205,9 @@ export default function Contact() {
 
                                 <input id="tamanho_empresa_media" type="radio" name="tamanho" value="media" onChange={handleChange} />
 
-                                <label htmlFor="tamanho_empresa_media">Média</label>
+                                <TextReader text="Média">
+                                    <label htmlFor="tamanho_empresa_media">Média</label>
+                                </TextReader>
 
                             </div>
 
@@ -194,7 +215,9 @@ export default function Contact() {
                                 
                                 <input id="tamanho_empresa_grande" type="radio" name="tamanho" value="grande" onChange={handleChange} />
 
-                                <label htmlFor="outros">Grande</label>
+                                <TextReader text="Grande">
+                                    <label htmlFor="outros">Grande</label>
+                                </TextReader>
 
                             </div> 
 
@@ -202,7 +225,9 @@ export default function Contact() {
                                 
                                 <input id="tamanho_empresa_multiNacional" type="radio" name="tamanho" value="multi_nacional" onChange={handleChange} />
 
-                                <label htmlFor="semDefinicao">Multi nacional</label>
+                                <TextReader text="Multi nacional">
+                                    <label htmlFor="semDefinicao">Multi nacional</label>
+                                </TextReader>
 
                             </div>
 
@@ -213,7 +238,11 @@ export default function Contact() {
                     <div className="grid md:flex md:flex-col justify-start">
                         
                         <div className="font-sen text-2xl mb-5">
-                            <h6>Produtos</h6>
+
+                            <TextReader text="Produtos">
+                                <h6>Produtos</h6>
+                            </TextReader>
+
                         </div>
 
                         <div className="grid md:flex justify-start gap-5 text-xl font-sen mb-10">
@@ -222,7 +251,9 @@ export default function Contact() {
 
                                 <input id="produto_atendimento" type="radio" name="produto" value="atendimento" onChange={handleChange} />
 
-                                <label htmlFor="produto_atendimento">Atendimento</label>
+                                <TextReader text="Atendimento">
+                                    <label htmlFor="produto_atendimento">Atendimento</label>
+                                </TextReader>
 
                             </div> 
 
@@ -230,7 +261,9 @@ export default function Contact() {
 
                                 <input id="produto_cloud" type="radio" name="produto" value="cloud" onChange={handleChange} />
 
-                                <label htmlFor="produto_cloud">Cloud</label>
+                                <TextReader text="Cloud">
+                                    <label htmlFor="produto_cloud">Cloud</label>
+                                </TextReader>
 
                             </div> 
 
@@ -238,7 +271,9 @@ export default function Contact() {
 
                                 <input id="produto_slack" type="radio" name="produto" value="slack" onChange={handleChange} />
 
-                                <label htmlFor="produto_slack">Slack</label>
+                                <TextReader text="Slack">
+                                    <label htmlFor="produto_slack">Slack</label>
+                                </TextReader>
 
                             </div>
 
@@ -246,7 +281,9 @@ export default function Contact() {
 
                                 <input id="produto_eintein" type="radio" name="produto" value="einsteins" onChange={handleChange} />
 
-                                <label htmlFor="produto_eintein">Einstein</label>
+                                <TextReader text="Einstein">
+                                    <label htmlFor="produto_eintein">Einstein</label>
+                                </TextReader>
 
                             </div> 
 
@@ -254,7 +291,9 @@ export default function Contact() {
 
                                 <input id="produto_vendas" type="radio" name="produto" value="vendas" onChange={handleChange} />
 
-                                <label htmlFor="produto_vendas">Vendas</label>
+                                <TextReader text="Vendas">
+                                    <label htmlFor="produto_vendas">Vendas</label>
+                                </TextReader>
 
                             </div> 
 
@@ -262,7 +301,9 @@ export default function Contact() {
 
                                 <input id="produto_marketing" type="radio" name="produto" value="marketing" onChange={handleChange} />
 
-                                <label htmlFor="produto_marketing">Marketing</label>
+                                <TextReader text="Marketing">
+                                    <label htmlFor="produto_marketing">Marketing</label>
+                                </TextReader>
 
                             </div> 
 
@@ -274,7 +315,11 @@ export default function Contact() {
                     <div className="mx-auto w-full mb-10">
 
                     <div className="font-sen text-2xl mb-5">
-                            <h6>Sua mensagem</h6>
+
+                            <TextReader text="Sua mensagem">
+                                <h6>Sua mensagem</h6>
+                            </TextReader>
+
                         </div>
 
                         <div>
@@ -293,7 +338,9 @@ export default function Contact() {
 
                     <div className="flex justify-center items-center px-8 py-3 font-sen text-2xl rounded bg-segunda dark:bg-[#3EA0E7] dark:text-white text-white text-center">
 
-                        <button className='flexs justify-center items-center' type="submit">Enviar</button>
+                        <TextReader text="Enviar">
+                            <button className='flexs justify-center items-center' type="submit">Enviar</button>
+                        </TextReader>
 
                     </div>
 

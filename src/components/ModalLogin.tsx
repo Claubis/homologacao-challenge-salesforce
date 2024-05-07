@@ -1,15 +1,47 @@
 'use client'
 
-import { Fragment, useRef, useState } from 'react'
+/* Importações Gerais */
+import { Fragment, useRef, useState, useEffect } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+
+/* Importação de componentes */
 import TextReader from './TextReader'
 
 export default function ModalLogin() {
+
+  /* Fica definido o modal como verdadeiro e vai abrir até que o usuário cliente em Login. Nosso objetivo é fazer com que 
+  ele faça Login para ter uma melhor experiência e podermos coletar dados. */
+  
   const [open, setOpen] = useState(true)
 
   const cancelButtonRef = useRef(null)
+
+  /* Enviar os dados do modal para o LocalStorage e mostrar uma única vez na sessão */
+
+  useEffect(() => {
+    const modalShown = localStorage.getItem('modalShown');
+  
+    // Exibe o modal se modalShown não for 'true'
+    if (modalShown === 'true') {
+      setOpen(false);
+    }
+  }, []);
+  
+  const handleLogin = () => {
+
+    // Define 'modalShown' como 'false' para que o modal não seja exibido novamente
+    localStorage.setItem('modalShown', 'true');
+    setOpen(true);
+  }
+
+
+  const handleCancel = () => {
+    localStorage.setItem('modalShown', 'false');
+    setOpen(false);
+  };
+
 
   return (
     <Transition.Root show={open} as={Fragment}>
@@ -47,7 +79,7 @@ export default function ModalLogin() {
                       
                     <TextReader text="Melhore sua experiência com apenas dois cliques">
 
-                        <Dialog.Title as="h3" className="font-manrope leading-6 text-gray-900 text-xl mb-5">
+                        <Dialog.Title as="h3" className="font-manrope leading-6 text-gray-900 text-lg mb-5">
                       Melhore sua experiência com apenas dois cliques
                         </Dialog.Title>
 
@@ -57,13 +89,13 @@ export default function ModalLogin() {
                             
                         
                         <TextReader text="Para ter acesso a todos os conteúdos e novidades, faça o login usando uma das nossas plataformas parceiras com apenas dois clientes e veja a diferença na sua navegação.">
-                            <p className="text-lg text-gray-500 font-sen">
+                            <p className="text-sm text-gray-500 font-manrope">
                         Para ter acesso a todos os conteúdos e novidades, faça o login usando uma das nossas plataformas parceiras com apenas dois cliques e veja a diferença na sua navegação.
                         </p>
                         </TextReader>
 
                         <TextReader text="Não precisa ter conta com a SalesForce">
-                          <p className="text-lg text-gray-500 font-sen mt-5">Não precisa ter conta com a SalesForce</p>
+                          <p className="text-md text-gray-500 font-manrope mt-5">Não precisa ter conta com a SalesForce</p>
                         </TextReader>
                         
                       </div>
@@ -76,7 +108,8 @@ export default function ModalLogin() {
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-segunda px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primeira sm:ml-3 sm:w-auto"
-                    onClick={() => setOpen(false)}
+                    
+                    onClick={handleLogin}
                   >
                 
                     <TextReader text="Login">
@@ -90,8 +123,11 @@ export default function ModalLogin() {
                     <button
                         type="button"
                         className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 font-sen text-xl text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 sm:mt-0 sm:w-auto hover:bg-red-500 hover:text-white"
-                        onClick={() => setOpen(false)}
+                        
+                        onClick={handleCancel}
+
                         ref={cancelButtonRef}
+
                     >
                         Cancelar
                     </button>

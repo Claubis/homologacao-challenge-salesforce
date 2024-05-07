@@ -111,7 +111,7 @@ export default function CRM(){
                         </div>
 
                         <TextReader text="Contato agora">
-                        <Link href="/Contact" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-900 dark:text-gray-50 ">Contato agora</Link>
+                        <Link href="/Contact" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-900 dark:text-gray-50 hover:bg-white">Contato agora</Link>
                         </TextReader>
 
                     </div>
@@ -198,7 +198,7 @@ export default function CRM(){
                         </div>
 
                         <TextReader text="Formulário de Descoberta">
-                        <Link href="/FormDescoberta" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-900 dark:text-gray-50 dark:border-gray-600">Formulário de Descoberta</Link>
+                        <Link href="/FormDescoberta" rel="noreferrer noopener" className="px-5 mt-4 lg:mt-0 py-3 rounded-md border block dark:bg-gray-900 dark:text-gray-50 dark:border-gray-600 hover:bg-white">Formulário de Descoberta</Link>
                         </TextReader>
                         
                     </div>

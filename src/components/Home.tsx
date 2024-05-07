@@ -28,7 +28,7 @@ export default function Home(){
                     
                         <TextReader text="Bem vindo à SalesForce">
 
-                            <h1 className="text-4xl md:text-6xl font-manrope leading-none text-left dark:text-white">Bem vindo à <br />SalesForce </h1>
+                            <h1 className="text-4xl md:text-6xl font-bold leading-none text-left dark:text-white">Bem vindo à <br />SalesForce </h1>
 
                         </TextReader>
                     

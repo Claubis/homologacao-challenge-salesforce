@@ -31,9 +31,9 @@ const callsToAction = [
 export default function NavForms() {
   return (
     <Popover className="relative">
-      <Popover.Button className="inline-flex items-center gap-x-1 font-manrope leading-6  text-gray-900">
+      <Popover.Button className="inline-flex items-center gap-x-1 font-bold leading-6">
         <TextReader text="Formulários">
-          <span className='dark:text-[#FFFF] dark:border-[#FFFF] font-manrope'>Formulários</span>
+          <span className='dark:text-[#FFFF] dark:border-[#FFFF] font-bold'>Formulários</span>
         </TextReader>
         <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
       </Popover.Button>
@@ -48,8 +48,8 @@ export default function NavForms() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover.Panel className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">
-          <div className="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white dark:bg-gray-700 font-sen leading-6 shadow-lg ring-1 ring-gray-900/5 ">
-            <div className="p-4 ">
+          <div className="w-screen max-w-sm flex-auto overflow-hidden rounded-3xl bg-white dark:bg-gray-700 font-sen leading-6 shadow-lg ring-1 ring-gray-900/5 text-sm">
+            <div className="p-2">
               {solutions.map((item) => (
                 <div key={item.name} className="group relative flex gap-x-6 rounded-lg p-4 dark:hover:bg-gray-600 hover:bg-segunda">
 
@@ -57,7 +57,7 @@ export default function NavForms() {
                     <item.icon className="h-6 w-6 text-gray-600 group-hover:text-[#3EA0E7] " aria-hidden="true" />
                   </div>
 
-                  <div>
+                  <div className="text-sm">
 
                     <Link href={item.href} className="font-manrope text-gray-900 dark:text-white">
                     
@@ -77,13 +77,10 @@ export default function NavForms() {
 
             <div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
               {callsToAction.map((item) => (
-
-
-              
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="flex items-center justify-center gap-x-2.5 p-3 font-manrope text-gray-900 hover:bg-gray-100"
+                    className="flex items-center justify-center gap-x-2.5 p-3 font-bold text-gray-900 hover:bg-gray-100"
                   >
                     <TextReader text={item.name}>
 
@@ -102,7 +99,7 @@ export default function NavForms() {
               
             </div>
 
-            <div className="flex justify-center h-20 text-xl">
+            <div className="flex justify-center h-20 text-md">
               <Popover.Button as="button" onClick={() => {/* Aqui não é necessário uma ação adicional para fechar */}}>
               Fechar
               </Popover.Button>
