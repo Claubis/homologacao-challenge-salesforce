@@ -14,19 +14,18 @@ import { GlobeAltIcon, MoonIcon, Cog6ToothIcon, MegaphoneIcon  } from '@heroicon
 import Link from 'next/link';
 
 /* Importação dos componentes */
-import { useToggleFontIncrease } from './useToggleFontIncrease';
-import { useToggleFontDecrease } from './useToggleFontDecrese';
 import { useChangeLanguage } from './useChangeLanguage';
 import { useTextReader } from './useTextReader';
 import TextReader from './TextReader'
+
 
 export default function NavSolution() {
 
   const [isReadingEnabled, setIsReadingEnabled] = useState(false);
 
   // Para ajuste das fontes
-  const { isFontUpEnabled, toggleFontIncrease } = useToggleFontIncrease();
-  const { isFontDownEnabled, toggleFontDecrease } = useToggleFontDecrease();
+  const [isFontUpEnabled, setIsFontUpEnabled] = useState(false);
+  const [ isFontDownEnabled, setIsFontDownEnabled ] = useState(false);
 
   // Para alterar o idioma
   const { isLanguageOn, toggleAlterLanguage } = useChangeLanguage();
@@ -41,8 +40,8 @@ export default function NavSolution() {
     { name: 'Leitor de tela', description: 'Leitura parcial, basta clicar em cada texto', href: '#', icon: MegaphoneIcon, action: 'useTextReader'  },
     { name: 'Configuração', description: "Ajuste a cor das fontes", href: '#', icon: Cog6ToothIcon },
     { name: 'Idioma', description: 'Defina o idioma da sua página', href: '/ModalIdioma', icon: GlobeAltIcon, action:'ChangeLanguage' },
-    { name: 'Aumentar fonte', description: 'Defina o tamanho da fonte usando a seta para cima para aumentar a fonte', href: '#', icon: ArrowUpIcon, action: 'useToggleFontIncrease' },
-    { name: 'Diminuir fonte', description: 'Defina o tamanho da fonte usando seta para baixo para diminuir a fonte', href: '#', icon: ArrowDownIcon, action: 'useToggleFontDecrease' },
+    { name: 'Aumentar fonte', description: 'Defina o tamanho da fonte usando a seta para cima para aumentar a fonte', href: '#', icon: ArrowUpIcon, action: 'toggleFontIncrease' },
+    { name: 'Diminuir fonte', description: 'Defina o tamanho da fonte usando seta para baixo para diminuir a fonte', href: '#', icon: ArrowDownIcon, action: 'toggleFontDecrease' },
   ]
 
   const callsToAction = [
@@ -61,6 +60,35 @@ export default function NavSolution() {
   };
 
   
+
+  // Ajuste para aumentar a fonte
+  const toggleFontIncrease = () => {
+    setIsFontUpEnabled(prevState => {
+      const newState = !prevState;
+      localStorage.setItem('isFontUpEnabled', String(newState));
+      return newState;
+    });
+  };
+
+  useEffect(() => {
+    const storedValue = localStorage.getItem('isFontUpEnabled');
+    setIsFontUpEnabled(storedValue === 'true');
+  }, []);
+
+  // Ajuste para diminuir a fonte
+  const toggleFontDecrease = () => {
+    setIsFontDownEnabled(prevState => {
+      const newState = !prevState;
+      localStorage.setItem('isFontDownEnabled', String(newState));
+      return newState;
+    });
+  };
+
+  useEffect(() => {
+    const storedValue = localStorage.getItem('isFontDownEnabled');
+    setIsFontDownEnabled(storedValue === 'true');
+  }, []);
+
   const handleClick = (action: string | undefined, href: string) => {
 
     // Isso interrompe a função se action for undefined
@@ -76,7 +104,7 @@ export default function NavSolution() {
         toggleTextReaderOn();
         break;
 
-      case 'useToggleFontIncrease':
+      case 'toggleFontIncrease':
         // Ativar ou desativar a ação de aumentar a fonte
         toggleFontIncrease();
         break;
