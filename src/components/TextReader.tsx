@@ -7,6 +7,7 @@ interface TextReaderProps  {
 
 const TextReader: React.FC<TextReaderProps> = ({text, children  }) => {
   
+  /* Precisa ser acionado ao clicar com o botão do mouse */
   const handleClick  = () => {
     
     console.log('Texto para ser lido:', text);
@@ -28,9 +29,19 @@ const TextReader: React.FC<TextReaderProps> = ({text, children  }) => {
     }
   };
 
+  /* Acionar quando eu apertar a tecla TAB */
+  const handleFocus = () => {
+    handleClick();
+  };
+
   return (
-    <div onClick={handleClick} style={{ cursor: 'pointer' }}>
-      {children }
+    <div 
+    onClick={handleClick} 
+    // onFocus={handleFocus}
+    style={{ cursor: 'pointer' }}
+    tabIndex={0}>
+    
+    {children }
     </div>
   );
 };

@@ -23,6 +23,7 @@ import VLibras from '@djpfs/react-vlibras';
 import WatsonAssistantChat from '../components/WatsonAssistantChat';
 
 
+
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   
   const [isClient, setIsClient] = useState(false);
@@ -33,13 +34,17 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   }, []);
 
   return (
+
     <SessionProvider session={session}>
-      <Navbar/>
-      <WatsonAssistantChat/>
-      {isClient && <VLibras forceOnload={true} />}
         
-        <Component {...pageProps} />
-        <Footer/>
+        <Navbar/>
+        <WatsonAssistantChat/>
+        {isClient && <VLibras forceOnload={true} />}
+          
+          <Component {...pageProps} />
+          <Footer/>
+
+
     </SessionProvider>
 
   );

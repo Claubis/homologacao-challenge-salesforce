@@ -3,12 +3,14 @@
 /* Importações gerais */
 import React from "react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /* Importações de componentes */
 import NavSolution from './NavSolution'
 import NavForms from "./NavForms";
 import TextReader from "./TextReader";
+import HighlightedField from './HighlightedField';
+import  FocusableComponent from '../components/FocusableComponent';
 
 export default function Navbar(){
 
@@ -23,50 +25,58 @@ export default function Navbar(){
         setMenuOpen(false);
     };
 
+    
     return(
 
         <header className="p-4 dark:bg-gray-700 dark:text-white">
 
             <div className="container flex justify-between h-16 mx-auto">
 
-                <Link rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2">
-                    
-                    <img src={'/assets/Navbar/imagem.svg'} width={100} height={500} alt="Logo da Sales Force"></img>
+            <FocusableComponent id="text1" tabIndex={0}>
                 
+                <Link rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2">
+            
+                    <img src={'/assets/Navbar/imagem.svg'} width={100} height={500} alt="Logo da Sales Force"></img>    
+                    
                 </Link>
+
+            </FocusableComponent>
 
                 <ul className={`items-stretch lg:flex ${menuOpen ? 'block' : 'hidden'}`}>
 
                     <button onClick={closeMenu} className="lg:hidden">Fechar</button>
                     
-                    <li className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
+                    <li id="text2" tabIndex={1} className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
                         
                         <TextReader text="Produto">
                             
-                            <Link rel="noopener noreferrer" href="/Product" >Produto</Link>
+                            <Link  rel="noopener noreferrer" href="/Product" >Produto</Link>
 
                         </TextReader>
 
                     </li>
 
-                    <li className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
-
+                    <li id="text3" tabIndex={2} className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
+                        
                         <TextReader text="Projeto">
 
-                            <Link rel="noopener noreferrer" href="/Project" >Projeto</Link>
+                            <Link  rel="noopener noreferrer" href="/Project">Projeto</Link>
 
                         </TextReader>
 
                     </li>
 
-                    <li className="flex">
-
-                    
-                        <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope"><NavForms/></Link>
+                    <li id="text4" tabIndex={3} className="flex">
+                        
+                        <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope">
+                            
+                            <NavForms/>
+                            
+                        </Link>
 
                     </li>   
 
-                    <li className="flex">
+                    <li id="text5" tabIndex={4} className="flex">
                         
                         <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope"><NavSolution/></Link>
                         
@@ -75,18 +85,19 @@ export default function Navbar(){
                 </ul>
 
                 <div className="items-center flex-shrink-0 hidden lg:flex">
-                    
-                <TextReader text="Acessar">
 
-                    <Link href="/Login"><button className="self-center px-8 py-3 rounded font-sen hover:text-[#3EA0E7]">Acessar</button></Link>
-                    
-                </TextReader>
-                    
-                <TextReader text="Cadastre-se">
+                    <TextReader text="Acessar">
 
-                    <Link href="/Cadastro"><button className="self-center px-8 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl hover:bg-primeira">Cadastre-se</button></Link>
+                        <Link id="text6" tabIndex={5} href="/Login"><button className="self-center px-8 py-3 rounded font-sen hover:text-[#3EA0E7]">Acessar</button></Link>
+                        
+                    </TextReader>
+
+                    <TextReader text="Cadastre-se">
                     
-                </TextReader>
+                        <Link id="text7" tabIndex={6} href="/Cadastro"><button className="self-center px-8 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl hover:bg-primeira">Cadastre-se</button></Link>
+
+                    </TextReader>
+
 
                 </div>
 

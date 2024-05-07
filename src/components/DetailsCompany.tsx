@@ -5,11 +5,13 @@ import Link from "next/link";
 
 /* Importação de componentes  */
 import TextReader from "./TextReader";
+import  FocusableComponent from '../components/FocusableComponent';
 
 /* Impotação do modulo de animação */
 import { motion } from "framer-motion"
 
 export default function DetailsCompany(){
+
 
     return(
 
@@ -18,8 +20,12 @@ export default function DetailsCompany(){
             <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
 
                 <div className="flex items-center justify-center">
-
-                    <Image src="/assets/Details/imagem.png" alt="Imagem com foco nos produtos 360" className="object-contain" width={900} height={500}/>
+                
+                <FocusableComponent id="text12" tabIndex={11}>
+                    
+                    <Image id="text12" tabIndex={11} src="/assets/Details/imagem.png" alt="Imagem com foco nos produtos 360" className="object-contain" width={900} height={500}/>
+                
+                </FocusableComponent>
 
                 </div>
 
@@ -32,27 +38,33 @@ export default function DetailsCompany(){
                 transition={{duration:0.5}}
                 > 
 
-                <TextReader text="Transformando a maneira como você conecta com clientes">
+            
+                    <TextReader text="Transformando a maneira como você conecta com clientes">
 
-                    <h1 className="text-2xl md:text-6xl font-bold leading-8 md:leading-none text-start mt-10 md:mt-0">Transformando a maneira como você conecta com clientes
-                    </h1>
-                </TextReader>
+                        <h1 id="text13" tabIndex={12} className="text-2xl md:text-6xl font-bold leading-8 md:leading-none text-start mt-10 md:mt-0">Transformando a maneira como você conecta com clientes
+                        </h1>
 
-                <TextReader text="Bem-vindo ao mundo da Salesforce, a plataforma líder de gerenciamento de relacionamento com clientes (CRM) projetada para revolucionar a forma como as empresas se conectam com seus clientes. Em um ambiente de negócios cada vez mais digital e centrado no cliente, a Salesforce se destaca como uma solução inovadora que oferece ferramentas personalizáveis para atender às necessidades únicas de cada negócio.">
+                    </TextReader>
 
-                    <p className="mt-6 mb-8 text-xl md:text-2xl text-manrope sm:mb-12 leading-8 md:leading-10 text-start">Bem-vindo ao mundo da Salesforce, a plataforma líder de gerenciamento de relacionamento com clientes (CRM) projetada para revolucionar a forma como as empresas se conectam com seus clientes. Em um ambiente de negócios cada vez mais digital e centrado no cliente, a Salesforce se destaca como uma solução inovadora que oferece ferramentas personalizáveis para atender às necessidades únicas de cada negócio.
-                    </p>
-                </TextReader>
+                    
+                    <TextReader text="Bem-vindo ao mundo da Salesforce, a plataforma líder de gerenciamento de relacionamento com clientes (CRM) projetada para revolucionar a forma como as empresas se conectam com seus clientes. Em um ambiente de negócios cada vez mais digital e centrado no cliente, a Salesforce se destaca como uma solução inovadora que oferece ferramentas personalizáveis para atender às necessidades únicas de cada negócio.">
+                        
+                        <p id="text14" tabIndex={13} className="mt-6 mb-8 text-xl md:text-2xl text-manrope sm:mb-12 leading-8 md:leading-10 text-start">Bem-vindo ao mundo da Salesforce, a plataforma líder de gerenciamento de relacionamento com clientes (CRM) projetada para revolucionar a forma como as empresas se conectam com seus clientes. Em um ambiente de negócios cada vez mais digital e centrado no cliente, a Salesforce se destaca como uma solução inovadora que oferece ferramentas personalizáveis para atender às necessidades únicas de cada negócio.
+                        </p>
+
+                    </TextReader>
+
 
                     <div className="flex flex-col gap-5 md:gap-0 space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mb-10 md:mb-0">
                         
+                        
                         <TextReader text="Produtos">                        
-                            <Link rel="noopener noreferrer" href="/Product" className="px-8 py-3 text-xl font-sen rounded dark:bg-segunda dark:text-gray-50 bg-segunda text-white hover:bg-white hover:text-[#3EA0E7]">Produtos</Link>
+                            <Link id="text15" tabIndex={14} rel="noopener noreferrer" href="/Product" className="px-8 py-3 text-xl font-sen rounded dark:bg-segunda dark:text-gray-50 bg-segunda text-white hover:bg-white hover:text-[#3EA0E7]">Produtos</Link>
                         </TextReader>
 
                         <TextReader text="Contato">
 
-                            <Link rel="noopener noreferrer" href="/Contact" className="px-8 py-3 text-xl font-sen border rounded dark:border-white bg-white text-[#3EA0E7] hover:bg-segunda hover:text-white">Contato</Link>
+                            <Link id="text16" tabIndex={15} rel="noopener noreferrer" href="/Contact" className="px-8 py-3 text-xl font-sen border rounded dark:border-white bg-white text-[#3EA0E7] hover:bg-segunda hover:text-white">Contato</Link>
                         
                         </TextReader>
 
