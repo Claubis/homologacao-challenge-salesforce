@@ -10,6 +10,10 @@ interface FormData {
 }
 
 
+/* Importação dos componentes */
+import TextReader from "../components/TextReader";
+
+
 export default function FormFeedback(){
 
     const [rating, setRating] = useState(0);
@@ -74,23 +78,33 @@ export default function FormFeedback(){
       
     return(
 
-        <div className="bg-quinta md:flex md:justify-center min-h-[100vh]">
+        <div className="bg-quinta md:flex md:justify-start min-h-[100vh]">
 
-            <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-5 border border-red-600 p-6">
+            <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-5 border rounded-md p-6">
 
-                    <h1 className="text-3xl md:text-5xl font-orelega tracking-tight text-[#47667B] uppercase">Por que compartilhar seu feedback?</h1>
+                    <TextReader text="Por que compartilhar seu feedback?">
+                        <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-[#47667B] uppercase">Por que compartilhar seu feedback?</h1>
+                    </TextReader>
 
-                    <h2 className="mt-2 text-xl leading-8 font-manrope"><strong>Faça Parte da Mudança:</strong> Seu feedback nos ajuda a entender o que estamos fazendo certo, o que podemos melhorar e como podemos evoluir nossos serviços para atender ainda melhor às suas necessidades.</h2>
+                    <TextReader text="g>Faça Parte da Mudança: Seu feedback nos ajuda a entender o que estamos fazendo certo, o que podemos melhorar e como podemos evoluir nossos serviços para atender ainda melhor às suas necessidades.">
+                        <h2 className="mt-2 text-xl leading-8 font-manrope"><strong>Faça Parte da Mudança:</strong> Seu feedback nos ajuda a entender o que estamos fazendo certo, o que podemos melhorar e como podemos evoluir nossos serviços para atender ainda melhor às suas necessidades.</h2>
+                    </TextReader>
 
-                    <p className="mt-2 text-xl leading-8 font-manrope"><strong>Voz Ativa:</strong> Este é o seu momento para se expressar e ser ouvido. Cada comentário, cada sugestão contribui diretamente para as melhorias que implementamos.</p>
+                    <TextReader text=">Voz Ativa: Este é o seu momento para se expressar e ser ouvido. Cada comentário, cada sugestão contribui diretamente para as melhorias que implementamos.">
+                        <p className="mt-2 text-xl leading-8 font-manrope"><strong>Voz Ativa:</strong> Este é o seu momento para se expressar e ser ouvido. Cada comentário, cada sugestão contribui diretamente para as melhorias que implementamos.</p>
+                    </TextReader>
 
+                    <TextReader text="Rápido e Fácil: Sabemos que seu tempo é precioso. Por isso, nosso formulário é projetado para ser preenchido de forma rápida e sem complicações, respeitando seu tempo e disposição.">
                     <p className="mt-2 text-xl leading-10 font-manrope"><strong>Rápido e Fácil:</strong> Sabemos que seu tempo é precioso. Por isso, nosso formulário é projetado para ser preenchido de forma rápida e sem complicações, respeitando seu tempo e disposição.</p>
+                    </TextReader>
 
+                    <TextReader text="Compartilhe seu feedback conosco agora - juntos, podemos alcançar novos patamares de excelência.">
                     <p className="mt-2 text-xl md:text-xl leading-10 font-manrope">Compartilhe seu feedback conosco agora - juntos, podemos alcançar novos patamares de excelência.</p>
+                    </TextReader>
 
             </div>
 
-            <div className="w-[100%] bg-[#FFFFF] border border-red-600">
+            <div className="w-[100%] bg-[#FFFFF]">
 
                 <form
                 name="form-feedback"
@@ -103,7 +117,9 @@ export default function FormFeedback(){
 
                         <div>
                             
-                            <label className="block mb-2 text-xl font-sen text-white" htmlFor='name'>Nome</label>
+                            <TextReader text="Nome">
+                            <label className="block mb-2 text-xl font-bold text-white" htmlFor='name'>Nome</label>
+                            </TextReader>
                             
                             <input 
                             id='name'
@@ -117,7 +133,9 @@ export default function FormFeedback(){
                         
                         <div className="mx-auto"> 
 
-                            <label className="block mb-2 text-xl font-sen text-white" htmlFor='email'>Seu e-mail</label>
+                            <TextReader text="Seu e-mail">
+                                <label className="block mb-2 text-xl font-bold text-white" htmlFor='email'>Seu e-mail</label>
+                            </TextReader>
 
                             <input 
                             id="email"
@@ -148,7 +166,9 @@ export default function FormFeedback(){
                         
                         <div className="mx-auto">
 
-                            <label className="block mb-2 mt-5 text-xl font-sen text-white" htmlFor='message'>Sua mensagem</label>
+                            <TextReader text="Sua mensagem">
+                                <label className="block mb-2 mt-5 text-xl font-bold text-white" htmlFor='message'>Sua mensagem</label>
+                            </TextReader>
 
                             <textarea 
                             name='message' 
@@ -162,10 +182,14 @@ export default function FormFeedback(){
                         <div className='flex justify-center text-center mt-5'>
                         
                             <div>
+
+                                <TextReader text="Enviar">
                                 <button
                                 className='rounded-md bg-quarta px-3.5 py-2.5 text-xl font-sen text-white shadow-sm hover:bg-primeira hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-[100%]' 
                                 type='submit' 
                                 >Enviar</button>
+                                </TextReader>
+                                
                             </div>
                         
                         </div>

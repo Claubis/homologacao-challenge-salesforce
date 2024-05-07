@@ -1,9 +1,10 @@
 "use client"
 
-import TextReader from "./TextReader";
+/* Importação geral */
 import Link from "next/link";
 
-import About from '../components/About'
+/* Importação dos componentes */
+import TextReader from "./TextReader";
 
 export default function Footer(){
     return(
@@ -58,13 +59,7 @@ export default function Footer(){
 
                             <li>
                                 <TextReader text="Sobre">
-                                    <Link rel="noopener noreferrer" href="../components/About">Sobre</Link>
-                                </TextReader>
-                            </li>
-
-                            <li>
-                                <TextReader text="História">
-                                    <Link rel="noopener noreferrer" href="./AboutSalesForce">História</Link>
+                                    <Link rel="noopener noreferrer" href="/">Sobre</Link>
                                 </TextReader>
                             </li>
 
@@ -76,7 +71,7 @@ export default function Footer(){
 
                             <li>
                                 <TextReader text="Formulários">
-                                    <Link rel="noopener noreferrer" href="/Formulario">Formulários</Link>
+                                    <Link rel="noopener noreferrer" href="/">Formulários</Link>
                                 </TextReader>
                             </li>
 
