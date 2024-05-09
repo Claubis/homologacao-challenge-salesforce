@@ -9,7 +9,6 @@ import ModalLogin from '../components/ModalLogin'
 import AboutForms from '../components/AboutForms'
 import InfiniteMovingCardsDemo from './CarroselPartner'
 
-
 export default function Home() {
 
   return (

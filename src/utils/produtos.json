@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "nome": "Atendimento ao cliente",
+      "descricao": "O produto de atendimento ao cliente da Salesforce é projetado para oferecer um suporte abrangente antes, durante e após a compra, com foco na experiência do cliente. Essa abordagem busca não apenas atender às expectativas dos clientes mas superá-las, proporcionando um relacionamento mais próximo, inteligente e humano​",
+      "vantagens": ["Experiência Omnichannel: Oferece suporte multicanal integrado, permitindo aos clientes receber atenção e suporte independentemente do canal ou dispositivo usado​", "Inteligência Artificial e Chatbots: Utiliza inteligência artificial e chatbots para melhorar o atendimento ao cliente, automatizando tarefas e fornecendo respostas rápidas e personalizadas​.", "Visão 360 Graus do Cliente: Com o CRM integrado, é possível ter uma visão completa dos clientes, melhorando a gestão do relacionamento e personalizando o atendimento​."],
+      "segmento": "A solução de atendimento ao cliente da Salesforce é versátil, podendo ser aplicada em diversos segmentos, incluindo vendas, marketing e suporte ao cliente. Empresas de todos os tamanhos, desde startups a grandes corporações, podem se beneficiar da implementação dessa ferramenta para aprimorar o relacionamento com os clientes, resolver problemas de forma mais eficaz e transformar a experiência do cliente em um diferencial competitivo"
+    },
+    {
+      "id": 2,
+      "nome": "Commerce",
+      "descricao": "Descrição detalhada do Produto 2.",
+      "vantagens": ["Vantagem 1", "Vantagem 2"],
+      "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 3,
+        "nome": "IA - Inteligência Artificial",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 4,
+        "nome": "Marketing",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 5,
+        "nome": "MuleSoft",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 6,
+        "nome": "Net Zero",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 7,
+        "nome": "Nuvem de Dados",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 8,
+        "nome": "Parceiros",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 9,
+        "nome": "Plataforma",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 10,
+        "nome": "Slack",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 11,
+        "nome": "Sucessoa",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 12,
+        "nome": "Tableau",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 13,
+        "nome": "Tableau",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    },
+    {
+        "id": 14,
+        "nome": "Vendas",
+        "descricao": "Descrição detalhada do Produto 2.",
+        "vantagens": ["Vantagem 1", "Vantagem 2"],
+        "segmento": "Segmento de mercado para o Produto 2"
+    }
+    
+  ]
+  

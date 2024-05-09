@@ -9,7 +9,6 @@ import { useState, useEffect } from "react";
 import NavSolution from './NavSolution'
 import NavForms from "./NavForms";
 import TextReader from "./TextReader";
-import HighlightedField from './HighlightedField';
 import  FocusableComponent from '../components/FocusableComponent';
 
 export default function Navbar(){

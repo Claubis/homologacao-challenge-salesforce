@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 import TextReader from "./TextReader"; // Fazer a leitura da tela ao clicar em um elemento
 import  FocusableComponent from '../components/FocusableComponent'; // Para dar foco ao usar a tecla TAB
 import FontSizeAdjusterContainer from '../components/FontSizeAdjuster'; //Para aumentar as fontes
-import FontSizeDecreaserContainer from "./FontSizeDecreaserContainer";
+import FontSizeDecreaserContainer from "./FontSizeDecreaserContainer"; // Para diminuir a fonte
 
 /* Impotação do modulo de animação */
 import { motion } from "framer-motion"

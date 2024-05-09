@@ -1,6 +1,5 @@
 
 /* Importações gerais */
-import Image from "next/image";
 import Link from "next/link";
 
 /* Importação de componentes */
@@ -9,16 +8,16 @@ import TextReader from "@/components/TextReader";
 export default function Team(){
     return(
         
-        <section className="py-6 dark:bg-gray-700 dark:text-white h-[80vh] bg-gray-100">
+        <section className="py-6 dark:bg-gray-700 dark:text-white min-h-[80vh] bg-gray-100">
             
             <div className="container flex flex-col items-center justify-start p-4 mx-auto sm:p-10">
                 
                 <TextReader text="Time de desenvolvimento">
-                    <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">Time de desenvolvimento</p>
+                    <p className="p-2 text-sm font-medium tracking-wider text-start md:text-center uppercase">Time de desenvolvimento</p>
                 </TextReader>
                 
                 <TextReader text="Os talentos por trás desse projeto">
-                    <h1 className="text-4xl font-bold leading-none text-center sm:text-5xl mb-20">Os talentos por trás desse projeto</h1>
+                    <h1 className="text-4xl font-bold leading-none text-start md:text-center sm:text-5xl mb-20 p-6 md:p-0 uppercase">Os talentos por trás desse projeto</h1>
                 </TextReader>
                 
                 <div className="flex flex-row flex-wrap-reverse justify-center mt-8">

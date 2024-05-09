@@ -38,7 +38,6 @@ export default function DetailsCompany(){
                 transition={{duration:0.5}}
                 > 
 
-            
                     <TextReader text="Transformando a maneira como você conecta com clientes">
 
                         <h1 id="text13" tabIndex={12} className="text-2xl md:text-6xl font-bold leading-8 md:leading-none text-start mt-10 md:mt-0">Transformando a maneira como você conecta com clientes
@@ -58,8 +57,10 @@ export default function DetailsCompany(){
                     <div className="flex flex-col gap-5 md:gap-0 space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mb-10 md:mb-0">
                         
                         
-                        <TextReader text="Produtos">                        
+                        <TextReader text="Produtos">   
+
                             <Link id="text15" tabIndex={14} rel="noopener noreferrer" href="/Product" className="px-8 py-3 text-xl font-sen rounded dark:bg-segunda dark:text-gray-50 bg-segunda text-white hover:bg-white hover:text-[#3EA0E7]">Produtos</Link>
+
                         </TextReader>
 
                         <TextReader text="Contato">

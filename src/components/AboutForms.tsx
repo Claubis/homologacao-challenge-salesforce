@@ -13,7 +13,7 @@ export default function AboutForms(){
     return(
         <section className="p-4 lg:p-8 dark:bg-gray-700 dark:text-white bg-gray-200">
             
-            <div className="font-bold text-4xl md:text-5xl mt-20 mb-20 text-start md:text-center">
+            <div className="font-bold text-4xl md:text-5xl mt-20 mb-20 text-start md:text-center p-6 md:p-0">
 
                 <TextReader text="Saiba sobre nossos serviços e meios de contatos">
                     <h1>Saiba sobre nossos serviços <br />e meios de contatos</h1>
@@ -26,7 +26,7 @@ export default function AboutForms(){
 
                     <div className="flex justify-center items-center">
                     
-                        <img src="/assets/FormDescoberta/Imagem1.png" alt="Imagem contendo um formulário" width={500} height={500} />
+                        <img src="/assets/FormDescoberta/Imagem1.png" alt="Imagem do personagem Einstein"/>
 
                     </div>
 
@@ -49,7 +49,9 @@ export default function AboutForms(){
                         </TextReader>
                         
                         <TextReader text="Preencha agora">
+                        
                         <button type="button" className="self-start text-[#3EA0E7] uppercase"><Link href="/FormDescoberta">Preencha agora</Link></button>
+
                         </TextReader>
 
                     </div>
@@ -57,7 +59,7 @@ export default function AboutForms(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     
-                    <img src="/assets/FormDescoberta/Imagem5.png" alt="Imagem com um formulário de feedback" width={500} height={500}/>
+                    <img src="/assets/FormDescoberta/Imagem5.png" alt="Imagem com um formulário de feedback"/>
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -74,11 +76,15 @@ export default function AboutForms(){
                         </TextReader>
 
                         <TextReader text="Queremos ouvir o que você tem a dizer. Seja uma experiência que encantou você, um desafio que enfrentou ou uma ideia que acredita que poderia transformar nossa oferta, seu feedback é bem-vindo e altamente apreciado.">
-                        <p className="my-6 font-manrope leading-8 text-xl">Queremos ouvir o que você tem a dizer. Seja uma experiência que encantou você, um desafio que enfrentou ou uma ideia que acredita que poderia transformar nossa oferta, seu feedback é bem-vindo e altamente apreciado.</p>
+                            
+                            <p className="my-6 font-manrope leading-8 text-xl">Queremos ouvir o que você tem a dizer. Seja uma experiência que encantou você, um desafio que enfrentou ou uma ideia que acredita que poderia transformar nossa oferta, seu feedback é bem-vindo e altamente apreciado.</p>
+
                         </TextReader>
 
                         <TextReader text="Responda agora">
-                        <button type="button" className="self-start text-[#3EA0E7] uppercase"><Link href="/FormFeedback">Responda agora</Link></button>
+                        
+                            <button type="button" className="self-start text-[#3EA0E7] uppercase"><Link href="/FormFeedback">Responda agora</Link></button>
+
                         </TextReader>
 
                     </div>
@@ -87,8 +93,7 @@ export default function AboutForms(){
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
 
                     
-                    
-                    <img src="/assets/FormDescoberta/Imagem2.png" alt="Imagem sobre um formulário de contato"  width={500} height={500} />
+                    <img src="/assets/FormDescoberta/Imagem2.png" alt="Imagem com um personagem da SalesForce" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6 ">
                         

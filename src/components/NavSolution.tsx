@@ -27,6 +27,12 @@ export default function NavSolution() {
   const [isFontUpEnabled, setIsFontUpEnabled] = useState(false);
   const [ isFontDownEnabled, setIsFontDownEnabled ] = useState(false);
 
+  /* Desabilitar o scroll quando a fonte tiver ativada, por padrão ficará ativada, assim que ativar ou aumentar ou diminuir
+  a fonte, será desabilitado o scroll 
+  */
+  const [isScrollEnabled, setIsScrollEnabled] = useState(true);
+
+
   // Para alterar o idioma
   const { isLanguageOn, toggleAlterLanguage } = useChangeLanguage();
 
@@ -35,9 +41,9 @@ export default function NavSolution() {
  
   const solutions = [
     { name: 'Documentação', description: 'Conheça o que foi criado e como utilizar cada recurso para acessibilidade', href: '/Documentation', icon: FolderMinusIcon},
-    { name: 'Navegação com TAB', description: 'Navegue pelos nossos conteúdos utilizando a tecla TAB. Cada sessão e conteúdo que você acessar ficará em foco e destacado, facilitando a seleção e ação que você deseja realizar.', href: '/Documentation', icon: ArrowRightStartOnRectangleIcon},
+    // { name: 'Navegação com TAB', description: 'Navegue pelos nossos conteúdos utilizando a tecla TAB. Cada sessão e conteúdo que você acessar ficará em foco e destacado, facilitando a seleção e ação que você deseja realizar.', href: '/Documentation', icon: ArrowRightStartOnRectangleIcon},
     { name: 'Tema', description: 'Defina entre claro ou escuro', href: '#', icon: MoonIcon, action: 'toggleDarkMode' },
-    { name: 'Leitor de tela', description: 'Leitura parcial, basta clicar em cada texto', href: '#', icon: MegaphoneIcon, action: 'useTextReader'  },
+    // { name: 'Leitor de tela', description: 'Leitura parcial, basta clicar em cada texto', href: '#', icon: MegaphoneIcon, action: 'useTextReader'  },           
     { name: 'Configuração', description: "Ajuste a cor das fontes", href: '#', icon: Cog6ToothIcon },
     { name: 'Idioma', description: 'Defina o idioma da sua página', href: '/ModalIdioma', icon: GlobeAltIcon, action:'ChangeLanguage' },
     { name: 'Aumentar fonte', description: 'Defina o tamanho da fonte usando a seta para cima para aumentar a fonte', href: '#', icon: ArrowUpIcon, action: 'toggleFontIncrease' },
@@ -49,15 +55,15 @@ export default function NavSolution() {
     { name: 'Contato agora', href: '#', icon: PhoneIcon },
   ]
 
-  // Ajuste do tema para claro ou escuro
-  const toggleDarkMode = () => {
-    document.documentElement.classList.toggle('dark');
-  };
+  // // Ajuste do tema para claro ou escuro
+  // const toggleDarkMode = () => {
+  //   document.documentElement.classList.toggle('dark');
+  // };
 
-  // Ajuste para ler o conteúdo usando fala
-  const toggleReader = () => {
-    setIsReadingEnabled(!isReadingEnabled);
-  };
+  // // Ajuste para ler o conteúdo usando fala
+  // const toggleReader = () => {
+  //   setIsReadingEnabled(!isReadingEnabled);
+  // };
 
   
 
@@ -77,17 +83,41 @@ export default function NavSolution() {
 
   // Ajuste para diminuir a fonte
   const toggleFontDecrease = () => {
+    setIsScrollEnabled(false); // Desabilita o scroll
     setIsFontDownEnabled(prevState => {
-      const newState = !prevState;
-      localStorage.setItem('isFontDownEnabled', String(newState));
-      return newState;
+      const newStateDecrease = !prevState;
+      localStorage.setItem('isFontDownEnabled', String(newStateDecrease));
+      return newStateDecrease;
     });
   };
 
   useEffect(() => {
-    const storedValue = localStorage.getItem('isFontDownEnabled');
-    setIsFontDownEnabled(storedValue === 'true');
+    const storedValueDecrease = localStorage.getItem('isFontDownEnabled');
+    setIsFontDownEnabled(storedValueDecrease === 'true');
   }, []);
+
+  // Desabilita o scroll
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!isScrollEnabled) {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    if (!isScrollEnabled) {
+      document.body.style.overflow = 'hidden';
+      window.addEventListener('scroll', handleScroll);
+    } else {
+      document.body.style.overflow = '';
+      window.removeEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isScrollEnabled]);
+  
 
   const handleClick = (action: string | undefined, href: string) => {
 
@@ -109,7 +139,7 @@ export default function NavSolution() {
         toggleFontIncrease();
         break;
 
-      case 'useToggleFontDecrease':
+      case 'toggleFontDecrease':
         // Ativar ou desativar a ação de diminuir a fonte
         toggleFontDecrease();
         break;

@@ -1,7 +1,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
+
+/* Importação de componentes */
 import TextReader from '../components/TextReader'
+import ProductDetails from "@/components/ProductDetails";
 
 export default function Product(){
     return(
@@ -141,9 +144,7 @@ export default function Product(){
 
             <div className="font-manrope h-[100vh] text-center text-6xl bg-gray-100">
 
-                <TextReader text="Bloco de produtos">
-                <h1 className="pt-20">Bloco de produtos</h1>
-                </TextReader>
+                <ProductDetails/>
                 
             </div>
 

@@ -1,7 +1,10 @@
 "use client"
 
+/* importações gerais */
 import Link from "next/link";
-import TextReader from "./TextReader";
+
+/* Importação de componentes */
+import TextReader from "./TextReader"; // Fazer a leitura da tela ao clicar em um elemento
 
 export default function AboutServices() {
 
@@ -18,17 +21,23 @@ export default function AboutServices() {
                     <div className="flex flex-col justify-center flex-1 p-6 bg-gray-200  dark:bg-gray-700">
                         
                     <TextReader text="Serviços">
-                        <h3 className="mt-10 md:mt-0 text-4xl md:text-6xl font-bold dark:text-white">Serviços</h3>
+
+                        <h3 id="text31" tabIndex={30}  className="mt-10 md:mt-0 text-4xl md:text-6xl font-bold dark:text-white">Serviços</h3>
+
                     </TextReader>
 
                     <TextReader text="Utilizando o Salesforce Customer 360, nossa plataforma de CRM integrada, sua empresa oferece experiências personalizadas para seus clientes. Nossa solução fornece produtos poderosos e conectados para melhorar seu marketing, vendas, commerce, atendimento ao cliente, TI . e muito mais.">
-                        <p className="my-6 dark:text-white font-manrope text-xl leading-10">Utilizando o Salesforce Customer 360, nossa plataforma de CRM integrada, sua empresa oferece experiências personalizadas para seus clientes. Nossa solução fornece produtos poderosos e conectados para melhorar seu marketing, vendas, commerce, atendimento ao cliente, TI . e muito mais.</p>
+                        
+                        <p id="text32" tabIndex={31}  className="my-6 dark:text-white font-manrope text-xl leading-10">Utilizando o Salesforce Customer 360, nossa plataforma de CRM integrada, sua empresa oferece experiências personalizadas para seus clientes. Nossa solução fornece produtos poderosos e conectados para melhorar seu marketing, vendas, commerce, atendimento ao cliente, TI . e muito mais.</p>
+
                     </TextReader>
                         
                         <Link className="inline-flex items-center space-x-2 text-sm dark:text-[#639CD0]" href="/Services">
 
                         <TextReader text="Saiba mais">
-                            <span className="font-sen">Saiba mais</span>
+
+                            <span id="text33" tabIndex={32}  className="font-sen">Saiba mais</span>
+
                         </TextReader>
 
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">

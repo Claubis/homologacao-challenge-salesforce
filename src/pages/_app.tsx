@@ -21,7 +21,8 @@ import Footer from '../components/Footer';
 // import { FontSizeProvider } from '../contexts/FontSizeContext';
 import VLibras from '@djpfs/react-vlibras';
 import WatsonAssistantChat from '../components/WatsonAssistantChat';
-
+import FontSizeAdjusterContainer from '../components/FontSizeAdjuster'; //Para aumentar as fontes
+import FontSizeDecreaserContainer from "../components/FontSizeDecreaserContainer"; // Para diminuir a fonte
 
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
@@ -33,9 +34,32 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     setIsClient(true);
   }, []);
 
+  /* Aumentar a fonte */
+  const [isFontUpEnabled, setIsFontUpEnabled] = useState(false);
+
+  useEffect(() => {
+      const storedValue = localStorage.getItem('isFontUpEnabled');
+      console.log('Stored value:', storedValue);
+      setIsFontUpEnabled(storedValue === 'true');
+  }, []);
+
+  /* Diminuir a fonte */
+  const [isFontDownEnabled, setIsFontDownEnabled] = useState(false);
+
+  useEffect(() => {
+      const storedValue = localStorage.getItem('isFontDownEnabled');
+      console.log('Stored value:', storedValue);
+      setIsFontDownEnabled(storedValue === 'true');
+  }, []);
+
   return (
 
     <SessionProvider session={session}>
+
+      {/* Vai verificar se está verdadeiro o status para poder aumentar ou não a fonte. */}
+      {isFontUpEnabled && <FontSizeAdjusterContainer />}
+
+      {isFontDownEnabled && <FontSizeDecreaserContainer />}
         
         <Navbar/>
         <WatsonAssistantChat/>

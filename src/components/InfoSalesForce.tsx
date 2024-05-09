@@ -21,7 +21,7 @@ export default function InfoSalesForce(){
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
 
                                     <TextReader text="Personalização poderosa: A Salesforce permite uma personalização sem precedentes para atender às necessidades específicas de cada negócio, garantindo que cada interação com o cliente seja tão eficaz quanto possível">
-                                    <p><strong>Personalização poderosa:</strong> A Salesforce permite uma personalização sem precedentes para atender às necessidades específicas de cada negócio, garantindo que cada interação com o cliente seja tão eficaz quanto possível</p>
+                                    <p id="text40" tabIndex={39}><strong>Personalização poderosa:</strong> A Salesforce permite uma personalização sem precedentes para atender às necessidades específicas de cada negócio, garantindo que cada interação com o cliente seja tão eficaz quanto possível</p>
                                     </TextReader>
                                     <div className="flex items-center mt-4 space-x-4">
                                         
@@ -30,12 +30,12 @@ export default function InfoSalesForce(){
                                         <div>
                                             <TextReader text="Inteligência Artificia">
                                             
-                                            <p className="text-lg font-semibold">Inteligência Artificial</p>
+                                            <p id="text41" tabIndex={40} className="text-lg font-semibold">Inteligência Artificial</p>
 
                                             </TextReader>
 
                                             <TextReader text=">Com Einstein">
-                                                <p className="text-sm dark:text-gray-600">Com Einstein</p>
+                                                <p id="text42" tabIndex={41} className="text-sm dark:text-gray-600">Com Einstein</p>
                                             </TextReader>
                                         </div>
                                     </div>
@@ -44,7 +44,7 @@ export default function InfoSalesForce(){
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
                                 
                                 <TextReader text="Inovação contínua: Com atualizações regulares e uma dedicação à inovação, a Salesforce está sempre na vanguarda da tecnologia CRM, oferecendo aos seus usuários novas funcionalidades e melhoria">
-                                    <p><strong>Inovação contínua:</strong> Com atualizações regulares e uma dedicação à inovação, a Salesforce está sempre na vanguarda da tecnologia CRM, oferecendo aos seus usuários novas funcionalidades e melhorias.</p>
+                                    <p id="text43" tabIndex={42}><strong>Inovação contínua:</strong> Com atualizações regulares e uma dedicação à inovação, a Salesforce está sempre na vanguarda da tecnologia CRM, oferecendo aos seus usuários novas funcionalidades e melhorias.</p>
                                     </TextReader>
                                     <div className="flex items-center mt-4 space-x-4">
                                         
@@ -52,11 +52,11 @@ export default function InfoSalesForce(){
 
                                         <div>
                                             <TextReader text="Atendimento ao cliente">
-                                                <p className="text-lg font-semibold">Atendimento ao cliente</p>
+                                                <p id="text44" tabIndex={43} className="text-lg font-semibold">Atendimento ao cliente</p>
                                             </TextReader>
 
                                             <TextReader text="Vendas personalizada">
-                                                <p className="text-sm dark:text-gray-600">Vendas personalizadas</p>
+                                                <p id="text45" tabIndex={44} className="text-sm dark:text-gray-600">Vendas personalizadas</p>
                                             </TextReader>
                                         </div>
                                     </div>
@@ -66,7 +66,7 @@ export default function InfoSalesForce(){
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
 
                                 <TextReader text="Um ecossistema abrangente: A Salesforce não é apenas uma aplicação, mas um ecossistema completo. Através do Salesforce AppExchange, empresas podem acessar milhares de aplicativos integrados para expandir e personalizar sua plataforma Salesforce.">
-                                    <p><strong>Um ecossistema abrangente:</strong> A Salesforce não é apenas uma aplicação, mas um ecossistema completo. Através do Salesforce AppExchange, empresas podem acessar milhares de aplicativos integrados para expandir e personalizar sua plataforma Salesforce.</p>
+                                    <p id="text46" tabIndex={45}><strong>Um ecossistema abrangente:</strong> A Salesforce não é apenas uma aplicação, mas um ecossistema completo. Através do Salesforce AppExchange, empresas podem acessar milhares de aplicativos integrados para expandir e personalizar sua plataforma Salesforce.</p>
 
                                     </TextReader>
 
@@ -77,11 +77,11 @@ export default function InfoSalesForce(){
                                         <div>
 
                                         <TextReader text="Customer 360">
-                                            <p className="text-lg font-semibold">Customer 360</p>
+                                            <p id="text47" tabIndex={46} className="text-lg font-semibold">Customer 360</p>
                                             </TextReader>
 
                                             <TextReader text="Encontre tudo o que precisa">
-                                            <p className="text-sm dark:text-gray-600">Encontre tudo o que precisa</p>
+                                            <p id="text48" tabIndex={47} className="text-sm dark:text-gray-600">Encontre tudo o que precisa</p>
                                             </TextReader>
 
                                         </div>
@@ -91,7 +91,7 @@ export default function InfoSalesForce(){
                                 <div className="p-6 rounded shadow-md dark:bg-gray-50">
 
                                     <TextReader text="Cloud computing:  Sendo uma plataforma baseada na nuvem, a Salesforce oferece flexibilidade e acessibilidade incomparáveis, permitindo que as equipes acessem dados críticos de qualquer lugar, a qualquer hora, impulsionando a produtividade e a colaboração.">
-                                    <p><strong>Cloud computing:</strong>  Sendo uma plataforma baseada na nuvem, a Salesforce oferece flexibilidade e acessibilidade incomparáveis, permitindo que as equipes acessem dados críticos de qualquer lugar, a qualquer hora, impulsionando a produtividade e a colaboração.</p>
+                                    <p id="text49" tabIndex={48}><strong>Cloud computing:</strong>  Sendo uma plataforma baseada na nuvem, a Salesforce oferece flexibilidade e acessibilidade incomparáveis, permitindo que as equipes acessem dados críticos de qualquer lugar, a qualquer hora, impulsionando a produtividade e a colaboração.</p>
                                     </TextReader>
 
                                     <div className="flex items-center mt-4 space-x-4">
@@ -101,11 +101,11 @@ export default function InfoSalesForce(){
                                         <div>
 
                                         <TextReader text="Cloud Services">
-                                            <p className="text-lg font-semibold">Cloud Services</p>
+                                            <p id="text50" tabIndex={49} className="text-lg font-semibold">Cloud Services</p>
                                             </TextReader>
 
                                             <TextReader text=">Sales Clound diferente">
-                                            <p className="text-sm dark:text-gray-600">Sales Clound diferente</p>
+                                            <p id="text51" tabIndex={50} className="text-sm dark:text-gray-600">Sales Clound diferente</p>
                                             </TextReader>
                                         </div>
                                     </div>

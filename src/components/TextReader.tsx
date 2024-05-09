@@ -37,7 +37,7 @@ const TextReader: React.FC<TextReaderProps> = ({text, children  }) => {
   return (
     <div 
     onClick={handleClick} 
-    // onFocus={handleFocus}
+    onFocus={handleFocus}
     style={{ cursor: 'pointer' }}
     tabIndex={0}>
     

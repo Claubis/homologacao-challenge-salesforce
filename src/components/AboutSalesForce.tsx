@@ -1,9 +1,13 @@
 "use client"
-import TextReader from "./TextReader";
+
+/* Importações gerais */
 import Image from "next/image";
 
 /* Impotação do modulo de animação */
 import { motion } from "framer-motion"
+
+/* Importação de componentes  */
+import TextReader from "./TextReader";
 
 export default function AboutSalesForce(){
 
@@ -14,16 +18,18 @@ export default function AboutSalesForce(){
             <div className="mx-auto flex flex-col p-4 space-y-5 gap-3">
                 
             <TextReader text="Sobre a salesforce">
-                <h1 className="text-4xl md:text-6xl font-bold leading-none text-start mt-10">Sobre a salesforce</h1>
+
+                <h1 id="text34" tabIndex={33} className="text-4xl md:text-6xl font-bold leading-none text-start mt-10">Sobre a salesforce</h1>
+
             </TextReader>
 
             <TextReader text="A Salesforce é uma empresa de software que foca na solução de gerenciamento de relacionamento para aproximar empresas e pessoas.">
-                <p className="text-xl font-manrope text-start">A Salesforce é uma empresa de software que foca na solução de gerenciamento de relacionamento para aproximar empresas e pessoas.</p>
+                <p id="text35" tabIndex={34} className="text-xl font-manrope text-start">A Salesforce é uma empresa de software que foca na solução de gerenciamento de relacionamento para aproximar empresas e pessoas.</p>
             </TextReader>
 
             <TextReader text="É uma plataforma de CRM integrada que oferece a todos os departamentos uma visão única e compartilhada de cada cliente.">
 
-                <p className="text-xl font-manrope">
+                <p id="text36" tabIndex={35} className="text-xl font-manrope">
                 É uma plataforma de CRM integrada que oferece a todos os departamentos uma visão única e compartilhada de cada cliente.
                 </p>
 
@@ -31,12 +37,12 @@ export default function AboutSalesForce(){
 
             <TextReader text="A revolução no gerenciamento de relacionamento com clientes">
 
-                <h1 className="font-bold text-2xl">A revolução no gerenciamento de relacionamento com clientes</h1>
+                <h1 id="text37" tabIndex={36} className="font-bold text-2xl">A revolução no gerenciamento de relacionamento com clientes</h1>
 
             </TextReader>
 
             <TextReader text="A Salesforce emergiu como uma força transformadora no universo do CRM (Customer Relationship Management), redefinindo como as empresas se conectam, interagem e mantêm relacionamentos com seus clientes. Como uma plataforma líder globalmente, a Salesforce oferece soluções inovadoras em nuvem que cobrem todas as esferas do relacionamento com o cliente, desde vendas e atendimento ao cliente até marketing digital e análise de dados.">
-                <p className="text-xl font-manrope leading-10">A Salesforce emergiu como uma força transformadora no universo do CRM (Customer Relationship Management), redefinindo como as empresas se conectam, interagem e mantêm relacionamentos com seus clientes. Como uma plataforma líder globalmente, a Salesforce oferece soluções inovadoras em nuvem que cobrem todas as esferas do relacionamento com o cliente, desde vendas e atendimento ao cliente até marketing digital e análise de dados.</p>
+                <p id="text38" tabIndex={37} className="text-xl font-manrope leading-10">A Salesforce emergiu como uma força transformadora no universo do CRM (Customer Relationship Management), redefinindo como as empresas se conectam, interagem e mantêm relacionamentos com seus clientes. Como uma plataforma líder globalmente, a Salesforce oferece soluções inovadoras em nuvem que cobrem todas as esferas do relacionamento com o cliente, desde vendas e atendimento ao cliente até marketing digital e análise de dados.</p>
             </TextReader>
 
                 <div className="flex">
@@ -50,7 +56,7 @@ export default function AboutSalesForce(){
                     transition={{duration:0.5}}>
 
                         <TextReader text="O que torna a Salesforce única?">
-                            <h2 className="font-bold text-4xl md:text-6xl md:leading-[80px] text-[#8F278F]">O que torna a <br />Salesforce <br /> única?</h2>
+                            <h2 id="text39" tabIndex={38} className="font-bold text-4xl md:text-6xl md:leading-[80px] text-[#8F278F]">O que torna a <br />Salesforce <br /> única?</h2>
                             
                         </TextReader>
                     </motion.div>
