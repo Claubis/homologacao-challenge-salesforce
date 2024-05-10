@@ -45,31 +45,31 @@ export default function Navbar(){
 
                     <button onClick={closeMenu} className="lg:hidden">Fechar</button>
                     
-                    <li id="text2" tabIndex={1} className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
+                    <li  className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
                         
                         <TextReader text="Produto">
                             
-                            <Link  rel="noopener noreferrer" href="/Product" >Produto</Link>
+                            <Link id="text2" tabIndex={1}  rel="noopener noreferrer" href="/Product" >Produto</Link>
 
                         </TextReader>
 
                     </li>
 
-                    <li id="text3" tabIndex={2} className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
+                    <li  className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
                         
                         <TextReader text="Projeto">
 
-                            <Link  rel="noopener noreferrer" href="/Project">Projeto</Link>
+                            <Link id="text3" tabIndex={2} rel="noopener noreferrer" href="/Project">Projeto</Link>
 
                         </TextReader>
 
                     </li>
 
-                    <li id="text4" tabIndex={3} className="flex">
+                    <li  className="flex">
                         
-                        <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope">
+                        <Link id="text4" tabIndex={3} rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope">
                             
-                            <NavForms/>
+                        <NavForms/>
                             
                         </Link>
 

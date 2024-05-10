@@ -5,7 +5,6 @@
 import { useState } from 'react'
 
 /* Importação do LINK para direcionar para outra página */
-import Link from 'next/link';
 import Image from 'next/image'
 
 /* Importação dos componentes */

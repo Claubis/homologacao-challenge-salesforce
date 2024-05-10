@@ -124,5 +124,3 @@ export default function AboutForms(){
         </section>
     );
 }
-
-import imagem from '../../public/assets/Details/imagem6.png'

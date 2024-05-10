@@ -15,7 +15,6 @@ import FontSizeDecreaserContainer from "./FontSizeDecreaserContainer"; // Para d
 /* Impotação do modulo de animação */
 import { motion } from "framer-motion"
 
-
 export default function Home(){
 
     /* Aumentar a fonte */
@@ -99,7 +98,7 @@ export default function Home(){
                     >
 
                             
-                            <img id="text11" tabIndex={10} src={'/assets/Home/image2.png'} width={1500} height={500} alt="Imagem Da página principal"></img>
+                        <img id="text11" tabIndex={10} src={'/assets/Home/image2.png'} width={1500} height={500} alt="Imagem ilustrativa com personagem da Salesforce em traje animal marrom, com fundo mostrando três produtos da Salesforce representados por gráficos, processo e cartão de visita."></img>
 
 
                     </motion.div>

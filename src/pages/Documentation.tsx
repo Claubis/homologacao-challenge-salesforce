@@ -18,6 +18,7 @@ export default function Documentation(){
                 
                 <div className="space-y-8 flex flex-col justify-center gap-10">
                     
+                    {/* Navegação usando TAB */}
                     <div>
                         
                     <TextReader text="Navegação">
@@ -184,6 +185,7 @@ export default function Documentation(){
 
                     </div>
 
+                    {/* Leitor de tela */}
                     <div>
                         
                     <TextReader text="Leitor de tela">
@@ -287,7 +289,98 @@ export default function Documentation(){
                         </ul>
 
                     </div>
+
+                    {/* Imagens com Alt para leitor de tela específico */}
+                    <div>
+                        <TextReader text="Imagens com descrição Alt">
+                            <h3 className="mb-5 text-2xl md:text-4xl font-bold text-red-700 dark:text-white">Imagens com Descrição Alt (Alternativo)</h3>
+                        </TextReader>
+
+                        <div className="flex justify-start items-center gap-3 mb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-[#3EA0E7]">
+                                <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                            </svg>
+
+                            <TextReader text="Importância do Atributo Alt em Imagens para Acessibilidade">
+                                <h2 className="font-bold text-xl md:text-2xl">Importância do Atributo Alt em Imagens para Acessibilidade</h2>
+                            </TextReader>
+                        </div>
+
+                        <div className="font-manrope text-md leading-7 md:leading-10 flex flex-col gap-5">
+
+                            <TextReader text="O atributo 'alt' em imagens é crucial para acessibilidade na web. Ele fornece uma descrição textual da imagem para leitores de tela, permitindo que usuários com deficiência visual entendam o conteúdo da imagem.">
+                                <p>O atributo 'alt' em imagens é crucial para acessibilidade na web. Ele fornece uma descrição textual da imagem para leitores de tela, permitindo que usuários com deficiência visual entendam o conteúdo da imagem.</p>
+                            </TextReader>
+
+                            
+
+                                <ul className="space-y-4">
+                                    <li>
+                                        <TextReader text="Descrição Acessível: Ao incluir uma descrição significativa no atributo 'alt', as imagens se tornam mais acessíveis, proporcionando uma experiência inclusiva para todos os usuários.">
+                                            <p><strong>Descrição Acessível:</strong> Ao incluir uma descrição significativa no atributo 'alt', as imagens se tornam mais acessíveis, proporcionando uma experiência inclusiva para todos os usuários.</p>
+                                        </TextReader>
+                                    </li>
+
+                                    <li>
+                                        <TextReader text="Compreensão do Conteúdo: Usuários com deficiência visual podem entender melhor o conteúdo da imagem ao ouvir a descrição fornecida pelo leitor de tela.">
+                                            <p><strong>Compreensão do Conteúdo:</strong> Usuários com deficiência visual podem entender melhor o conteúdo da imagem ao ouvir a descrição fornecida pelo leitor de tela.</p>
+                                        </TextReader>
+                                    </li>
+                                    
+                                    <li>
+                                        <TextReader text="Conformidade com Padrões de Acessibilidade: O uso adequado do atributo 'alt' em imagens ajuda a garantir a conformidade com padrões de acessibilidade, como as Diretrizes de Acessibilidade para Conteúdo Web (WCAG).">
+                                            <p><strong>Conformidade com Padrões de Acessibilidade:</strong> O uso adequado do atributo 'alt' em imagens ajuda a garantir a conformidade com padrões de acessibilidade, como as Diretrizes de Acessibilidade para Conteúdo Web (WCAG).</p>
+                                        </TextReader>
+                                    </li>
+
+                                    <TextReader text="Quando uma imagem ainda não foi carregada ou não pôde ser renderizada, o atributo alt desempenha um papel fundamental na acessibilidade. Ele fornece um texto alternativo que é exibido no lugar da imagem, permitindo que os usuários saibam o que a imagem representaria. Isso é especialmente importante para pessoas que utilizam leitores de tela, pois lhes permite entender o conteúdo da página, mesmo sem poder ver a imagem. Portanto, ao usar o atributo alt de forma adequada, você está garantindo uma experiência mais inclusiva para todos os usuários, independentemente de suas habilidades visuais.">
+                                        <li>Quando uma imagem ainda não foi carregada ou não pôde ser renderizada, o atributo alt desempenha um papel fundamental na acessibilidade. Ele fornece um texto alternativo que é exibido no lugar da imagem, permitindo que os usuários saibam o que a imagem representaria. Isso é especialmente importante para pessoas que utilizam leitores de tela, pois lhes permite entender o conteúdo da página, mesmo sem poder ver a imagem. Portanto, ao usar o atributo alt de forma adequada, você está garantindo uma experiência mais inclusiva para todos os usuários, independentemente de suas habilidades visuais.</li>
+                                    </TextReader>
+
+
+                                </ul>
+                        </div>
+
+                        <div>
+
+                            <div className="flex justify-start items-center gap-3 mb-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4 fill-current dark:text-[#3EA0E7]">
+                                    <path d="M426.072,86.928A238.75,238.75,0,0,0,88.428,424.572,238.75,238.75,0,0,0,426.072,86.928ZM257.25,462.5c-114,0-206.75-92.748-206.75-206.75S143.248,49,257.25,49,464,141.748,464,255.75,371.252,462.5,257.25,462.5Z"></path>
+                                    <polygon points="221.27 305.808 147.857 232.396 125.23 255.023 221.27 351.063 388.77 183.564 366.142 160.937 221.27 305.808"></polygon>
+                                </svg>
+
+                                <TextReader text="Importância do Atributo Alt em Imagens para Acessibilidade">
+                                    <h2 className="font-bold text-xl md:text-2xl">Processo</h2>
+                                </TextReader>
+                            </div>
+
+                            <TextReader text="Etapa 1">
+                                <p className="pt-5"><strong>Etapa 1</strong></p>
+                            </TextReader>
+
+                            <TextReader text="Inserir uma descrição da imagem de forma simples e clara é fundamental para garantir a acessibilidade e a compreensão do conteúdo para todos os usuários. A descrição deve ser sucinta, mas precisa o suficiente para transmitir a mensagem da imagem. Por exemplo, se a imagem mostra um gráfico de barras representando dados de vendas, a descrição poderia ser 'Gráfico de barras mostrando dados de vendas por mês'. Dessa forma, os usuários que não podem ver a imagem podem entender o que ela representa e ter uma experiência mais completa ao acessar o conteúdo.">
+                                <p className="pt-5 mb-5">Inserir uma descrição da imagem de forma simples e clara é fundamental para garantir a acessibilidade e a compreensão do conteúdo para todos os usuários. A descrição deve ser sucinta, mas precisa o suficiente para transmitir a mensagem da imagem. Por exemplo, se a imagem mostra um gráfico de barras representando dados de vendas, a descrição poderia ser "Gráfico de barras mostrando dados de vendas por mês". Dessa forma, os usuários que não podem ver a imagem podem entender o que ela representa e ter uma experiência mais completa ao acessar o conteúdo.</p>
+                            </TextReader>
+
+                            <img src="/assets/Documentation/Sessao-Alt/imagem1.png" alt="Exemplo da TAG IMG com o descritivo ALT para ajudar com a acessibilidade e leitura de tela" />
+
+                            <TextReader text="Etapa 2">
+                                <p className="pt-5"><strong>Etapa 2</strong></p>
+                                </TextReader>
+
+                                <TextReader text="Exemplo de como será mostrado na interface quando a imagem não carregar/renderizar">
+                                <p className="pt-5 mb-5">Exemplo de como será mostrado na interface quando a imagem não carregar/renderizar. Neste modelo, o usuário com a sua tecnologia pode ter o texto descrito para ele e conseguir imaginar ou visualizar o que tem de conteúdo.</p>
+                            </TextReader>
+
+                            <img src="/assets/Documentation/Sessao-Alt/imagem2.png" alt="Exemplo da TAG IMG com o descritivo ALT para ajudar com a acessibilidade e leitura de tela" />
+
+                        </div>
+
+                    </div>
+
                     
+                    {/* Definição do Tema a página */}
                     <div>
                         
                     <TextReader text="Tema">
@@ -390,6 +483,7 @@ export default function Documentation(){
                         </ul>
                     </div>
                     
+                    {/* Seleção do idioma */}
                     <div>
                         
                     <TextReader text="Idioma">
@@ -493,6 +587,7 @@ export default function Documentation(){
                         </ul>
                     </div>
 
+                    {/* Aplicação do VLibras para leitura do conteúdo em Libras */}
                     <div>
                         
                     <TextReader text="Libras">
@@ -600,6 +695,7 @@ export default function Documentation(){
                         </ul>
                     </div>
 
+                    {/* Login simplificado */}
                     <div>
                         
                     <TextReader text="Logine">
@@ -666,6 +762,7 @@ export default function Documentation(){
                         </ul>
                     </div>
 
+                    {/* Chatbot */}
                     <div>
                         
                     <TextReader text="Chatbot">
@@ -730,6 +827,7 @@ export default function Documentation(){
                                 </ul>
                     </div>
 
+                    {/* Ajuste da fonte com o teclado*/}
                     <div>
                         
                     <TextReader text="Ajuste da fonte com o teclad">
@@ -794,6 +892,7 @@ export default function Documentation(){
                                 </ul>
                     </div>
 
+                    {/* Vídeos com descrição */}
                     <div>
                         
                     <TextReader text="Vídeos com descrição<">
