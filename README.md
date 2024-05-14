@@ -576,6 +576,57 @@ Este componente é útil para integrar o Watson Assistant Chat em um aplicativo 
 
 6.2 O Chat ficará disponóvel 24 horas por dia e será gerenciado pelo Watson Assistant e não pelo React. 
 
+# CustomChat
+
+1. Descrição do Componente
+O código CustomChat implementa o gerenciamento da abertura e fechamento do chat, integrando o componente WatsonAssistantChat.
+
+2. Detalhes
+21. Verificação de Ambiente (isClient):
+
+Assim como no componente isClient verifica se o código está sendo executado no ambiente do navegador.
+
+2.2 Gerenciamento de Estado (isChatOpen):
+
+O componente usa o hook useState para gerenciar o estado de abertura do chat (isChatOpen).
+O valor inicial de isChatOpen é definido como:
+isClient && localStorage.getItem('isChatOpen') === 'true'.
+Essa expressão verifica se o código está no navegador (isClient) e, em seguida, verifica se existe uma chave "isChatOpen" no localStorage com valor "true". Se ambas as condições forem verdadeiras, o chat será aberto inicialmente.
+Função toggleChat:
+
+A função toggleChat é responsável por alternar o estado de abertura do chat (isChatOpen).
+Ela atualiza o estado usando setIsChatOpen com o valor oposto do estado atual (!isChatOpen).
+Além disso, a função atualiza o valor de "isChatOpen" no localStorage para persistir a preferência do usuário (aberto ou fechado) entre recarregamentos da página.
+Renderização Condicional:
+
+O componente retorna um div com a classe "chat-container".
+Dentro do div, há um botão com a classe "chat-icon" para alternar a abertura do chat. Você precisará substituir o comentário por seu ícone de chat personalizado.
+O componente WatsonAssistantChat é renderizado condicionalmente usando o operador lógico AND (&&). Se isChatOpen for verdadeiro, o componente do chat do Watson Assistant será renderizado.
+Conclusão:
+
+3. Finalização:
+Este componente (CustomChat) gerencia a abertura e fechamento do chat e integra o componente WatsonAssistantChat. Ele verifica o estado inicial no localStorage, permite alternar a abertura usando o botão, e persiste a preferência do usuário no localStorage.
+
+#  RightSidebar
+
+O código Sidebar deve funcionar para abrir o chat quando você pressiona o botão de chat. 
+
+Estado de Abertura do Chat (isChatOpen):
+
+O componente Sidebar agora possui um estado adicional, isChatOpen, que controla se o chat está aberto ou fechado.
+Tratamento da Ação 'CustomChat':
+
+Dentro da função handleClick, o caso "CustomChat" foi modificado. Agora, ele simplesmente define isChatOpen como true para indicar que o chat deve ser aberto.
+Renderização Condicional do Chat:
+
+No final do retorno do componente Sidebar, há uma renderização condicional usando o operador lógico AND (&&). Se isChatOpen for verdadeiro, o componente CustomChat será renderizado dentro da barra lateral.
+Como funciona:
+
+Quando você clica no botão "ChatBot" na barra lateral, a função handleClick é chamada com action sendo "CustomChat".
+A função handleClick altera isChatOpen para true.
+A renderização condicional do Sidebar verifica o novo valor de isChatOpen. Como ele é true, o componente CustomChat é renderizado dentro da barra lateral, abrindo o chat.
+Verificações adicionais:
+
 
 # Processo do VLibras
 1. Instalar biblioteca: npm install @djpfs/react-vlibras

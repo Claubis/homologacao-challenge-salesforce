@@ -470,7 +470,7 @@ const ProductInfo: React.FC<ProductInfoProps> = ({ onChange }) => {
 
             <div className='sm:col-span-3'>
 
-                <label htmlFor="produto_ques">Quais produtos sua empresa tem em funcioanamento hoje?</label>
+                <label htmlFor="produto_ques">Quais produtos sua empresa tem em funcionamento hoje?</label>
                 
                 <div className="mt-2">
                         
@@ -572,7 +572,7 @@ const QuestInfoFirst: React.FC<QuestProps> = ({ onChange }) => {
 
             <div className='sm:col-span-3'>
 
-                <label htmlFor="questao_desenvolver_estrategia">Desenvolver estratétigas de atendimento eficientes
+                <label htmlFor="questao_desenvolver_estrategia">Desenvolver estratégias de atendimento eficientes
 
                 </label>
                 

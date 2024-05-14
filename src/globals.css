@@ -107,6 +107,30 @@
 
 
 body {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
+}
+
+/* Personalizações para o Menu */
+.mobile-menu {
+  @apply fixed inset-0 z-50 bg-white/85 backdrop-blur-sm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; 
+  height: 100vh;
+}
+
+.close-button {
+  @apply font-bold text-lg;
+  color: red;
+}
+
+/* Persoalização do chat */
+
+#watson-chat {
+  position: fixed; /* Ou absolute */
+  bottom: 20px; /* Ajuste a posição conforme necessário */
+  right: 20px;
 }

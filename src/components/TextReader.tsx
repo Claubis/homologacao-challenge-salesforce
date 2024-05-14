@@ -34,6 +34,7 @@ const TextReader: React.FC<TextReaderProps> = ({text, children  }) => {
     handleClick();
   };
 
+
   return (
     <div 
     onClick={handleClick} 

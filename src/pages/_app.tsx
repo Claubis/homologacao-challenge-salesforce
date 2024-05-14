@@ -20,15 +20,18 @@ import Footer from '../components/Footer';
 // import { LanguageProvider } from '../contexts/LanguageContext';
 // import { FontSizeProvider } from '../contexts/FontSizeContext';
 import VLibras from '@djpfs/react-vlibras';
+import CustomChat from '../components/CustomChat'
 import WatsonAssistantChat from '../components/WatsonAssistantChat';
 import FontSizeAdjusterContainer from '../components/FontSizeAdjuster'; //Para aumentar as fontes
 import FontSizeDecreaserContainer from "../components/FontSizeDecreaserContainer"; // Para diminuir a fonte
+import Sidebar from '@/components/RightSidebar';
+import TextReaderContext from '../context/TextReaderContext'; // Assuming the path is correct
+
 
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   
   const [isClient, setIsClient] = useState(false);
-
 
   useEffect(() => {
     setIsClient(true);
@@ -52,6 +55,9 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
       setIsFontDownEnabled(storedValue === 'true');
   }, []);
 
+  /* Leitor de tela */
+  const [isSpeaking, setIsSpeaking] = useState(true);
+
   return (
 
     <SessionProvider session={session}>
@@ -63,12 +69,12 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
         
         <Navbar/>
         <WatsonAssistantChat/>
+        {/* <CustomChat/> */}
         {isClient && <VLibras forceOnload={true} />}
+        <Sidebar/>
           
           <Component {...pageProps} />
           <Footer/>
-
-
     </SessionProvider>
 
   );

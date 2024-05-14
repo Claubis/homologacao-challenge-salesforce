@@ -16,7 +16,7 @@ export default function Product(){
                 <div className="flex flex-col mx-auto overflow-hidden rounded justify-center">
                     
                     <div className=" flex justify-center bg-gray-200 dark:bg-gray-500 lg:max-w-8xl">
-                        <Image src="/assets/Details/imagem2.png" alt="Imagem com um personagem da SalesForce que vai explicar sobre os produtos" width={500} height={500} />
+                        <img src="/assets/Details/imagem2.png" alt="Imagem com um personagem da SalesForce que vai explicar sobre os produtos"/>
                     </div>
                     
                     <div className="p-6 pb-12 m-4 mx-auto -mt-16 space-y-6 lg:max-w-6xl sm:px-10 sm:mx-12 lg:rounded-md bg-gray-300 dark:bg-gray-400">
@@ -141,12 +141,14 @@ export default function Product(){
                 </div>
 
             </div>
+            
+            {/* Usar essa parte na segunda entrega para a SalesForce */}
 
-            <div className="font-manrope h-[100vh] text-center text-6xl bg-gray-100">
+            {/* <div className="font-manrope h-[100vh] text-center text-6xl bg-gray-100">
 
                 <ProductDetails/>
                 
-            </div>
+            </div> */}
 
         </div>
 

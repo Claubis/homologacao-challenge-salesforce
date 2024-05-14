@@ -78,7 +78,7 @@ export default function FormFeedback(){
       
     return(
 
-        <div className="bg-quinta md:flex md:justify-start min-h-[100vh]">
+        <div className="bg-quinta md:flex md:justify-start min-h-[100vh] p-10">
 
             <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-5 border rounded-md p-6">
 

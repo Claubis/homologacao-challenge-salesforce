@@ -2,9 +2,6 @@
 /* Importações gerais */
 import Link from "next/link";
 
-/* Impotação do modulo de animação */
-import { motion } from "framer-motion"
-
 /* Importação de componentes */
 import TextReader from "./TextReader";
 
@@ -26,7 +23,7 @@ export default function AboutForms(){
 
                     <div className="flex justify-center items-center">
                     
-                        <img src="/assets/FormDescoberta/Imagem1.png" alt="Imagem do personagem Einstein"/>
+                        <img src="/assets/Details/imagem3.png" alt="Imagem do personagem Einstein"/>
 
                     </div>
 
@@ -59,7 +56,7 @@ export default function AboutForms(){
 
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
                     
-                    <img src="/assets/FormDescoberta/Imagem5.png" alt="Imagem com um formulário de feedback"/>
+                    <img src="/assets/Details/imagem8.png" alt="Imagem com um formulário de feedback"/>
                     
                     <div className="flex flex-col justify-center flex-1 p-6">
                         
@@ -93,7 +90,7 @@ export default function AboutForms(){
                 <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
 
                     
-                    <img src="/assets/FormDescoberta/Imagem2.png" alt="Imagem com um personagem da SalesForce" />
+                    <img src="/assets/Details/imagem10.png" alt="Imagem com um personagem da SalesForce" />
                     
                     <div className="flex flex-col justify-center flex-1 p-6 ">
                         

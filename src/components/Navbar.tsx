@@ -5,8 +5,9 @@ import React from "react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
+
 /* Importações de componentes */
-import NavSolution from './NavSolution'
+// import NavSolution from './NavSolution'
 import NavForms from "./NavForms";
 import TextReader from "./TextReader";
 import  FocusableComponent from '../components/FocusableComponent';
@@ -41,9 +42,9 @@ export default function Navbar(){
 
             </FocusableComponent>
 
-                <ul className={`items-stretch lg:flex ${menuOpen ? 'block' : 'hidden'}`}>
+                <ul className={`items-stretch lg:flex ${menuOpen ? 'block mobile-menu' : 'hidden'}`}>
 
-                    <button onClick={closeMenu} className="lg:hidden">Fechar</button>
+                    <button onClick={closeMenu} className="lg:hidden close-button">Fechar</button>
                     
                     <li  className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
                         
@@ -65,6 +66,26 @@ export default function Navbar(){
 
                     </li>
 
+                    <li  className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
+                        
+                        <TextReader text="CRM">
+
+                            <Link id="text3" tabIndex={2} rel="noopener noreferrer" href="/CRM">CRM</Link>
+
+                        </TextReader>
+
+                    </li>
+
+                    <li  className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-bold">
+                        
+                        <TextReader text="Serviços">
+
+                            <Link id="text3" tabIndex={2} rel="noopener noreferrer" href="/Services">Serviços</Link>
+
+                        </TextReader>
+
+                    </li>
+
                     <li  className="flex">
                         
                         <Link id="text4" tabIndex={3} rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope">
@@ -75,11 +96,11 @@ export default function Navbar(){
 
                     </li>   
 
-                    <li id="text5" tabIndex={4} className="flex">
+                    {/* <li id="text5" tabIndex={4} className="flex">
                         
                         <Link rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 border-b-2 dark:text-[#FFFF] dark:border-[#FFFF] font-manrope"><NavSolution/></Link>
                         
-                    </li>
+                    </li> */}
 
                 </ul>
 
@@ -93,7 +114,7 @@ export default function Navbar(){
 
                     <TextReader text="Cadastre-se">
                     
-                        <Link id="text7" tabIndex={6} href="/Cadastro"><button className="self-center px-8 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl hover:bg-primeira">Cadastre-se</button></Link>
+                        <Link id="text7" tabIndex={6} href="/Cadastro"><button className="self-center px-4 py-3 font-sen rounded bg-segunda dark:bg-[#3EA0E7] dark:text-gray-50 text-white text-xl hover:bg-primeira">Cadastre-se</button></Link>
 
                     </TextReader>
 

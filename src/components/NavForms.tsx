@@ -3,6 +3,7 @@
 /* Importações gerais */
 import React from "react";
 import Link from 'next/link'
+import { useState } from "react";
 
 /* Instalar
 npm install @headlessui/react @heroicons/react
@@ -29,6 +30,9 @@ const callsToAction = [
 ]
 
 export default function NavForms() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <Popover className="relative">
       <Popover.Button className="inline-flex items-center gap-x-1 font-bold leading-6">

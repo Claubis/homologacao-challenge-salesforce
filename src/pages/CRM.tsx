@@ -6,6 +6,8 @@ import Link from "next/link";
 /* Importação de componente */
 import TextReader from "../components/TextReader";
 
+import imagem from '../../public/assets/Details/imagem2.png'
+
 export default function CRM(){
     return(
         
@@ -17,8 +19,7 @@ export default function CRM(){
                 
                     <div>
 
-                        <Image src="/assets/Details/imagem2.png" alt="Imagem ilustrativa" width={500} height={0}>
-                        </Image>
+                        <img src="/assets/Details/imagem2.png" alt="Imagem ilustrativa" className="w-[400px]"/>
 
                     </div>
 
