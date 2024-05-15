@@ -692,6 +692,52 @@ interface Window {
 
 7. Ajustar o arquivo tsconfig.json e inserir no campo compilerOptions: "typeRoots": ["./node_modules/@types", "./types"]
 
+# Conexão com a API do Google
+
+1. Criar e Coletar as credenciais:
+https://console.cloud.google.com/apis/credentials?project=celestial-digit-420914
+
+2. Salvar os dados em um script
+Chave secreta do cliente = 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
+ID = 803761310178-945f061pteqdk848pgh61r28g8ugbmgb.apps.googleusercontent.com
+
+3. Criar EndPoint
+http://localhost:3000/api/auth/callback/google
+
+4. Criar um arquivo .env.local e deixar salvo as credenciais lá.
+## DATABASE_URL=""
+#Using Oracle
+DATABASE_URL=""
+
+#Providers
+GOOGLE_CLIENT_ID=803761310178-945f061pteqdk848pgh61r28g8ugbmgb.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+
+5. Criar um componente dentro da pasta API > [...nextauth].ts 
+
+5.1 Vai enderizar as informações do Login
+
+import NextAuth from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+
+export default NextAuth({
+  providers: [
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string
+    })
+  ],
+  // Adicione outras configurações conforme necessário
+});
+
+5.2 Instalações
+npm install next-auth @types/next-auth google-auth-library
+
+
+5.3 No componente de Login, colocar a rota para a página privada
+
+
+
 
 ## Criação da API em Node
 

@@ -58,7 +58,7 @@ export default function Login(){
         } else {
 
             // Redireciona para protected page
-            Router.push("/protected");
+            Router.push("/ProtectedPageCadastro");
         }
 
 
@@ -156,7 +156,7 @@ export default function Login(){
                             </TextReader>
 
                         </button>
-
+{/* 
                         <button aria-label="Login with GitHub" role="button" className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 focus:dark:ring-[#3EA0E7]">
                             
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-5 h-5 fill-current dark:text-white text-[#3EA0E7]">
@@ -180,7 +180,7 @@ export default function Login(){
                                 <p className="dark:text-white font-bold">Acesse com Linkedin</p>
                             </TextReader>
                             
-                        </button>
+                        </button> */}
 
                     </div>
                 </div>
